@@ -5,11 +5,4 @@ sort_by = "date"
 template = "index.html"
 +++
 
-WAHOO!
-
-**This is the friday night funkin website!!**
-
-🥺😂😂😂😂😂
-
-_SWAGGED_
-
+STORE PAGE WAHOO!
