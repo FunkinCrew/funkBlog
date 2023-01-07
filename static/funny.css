@@ -19,17 +19,13 @@ body {
 .section {
     background-color: #3841BB;
     height: 100%;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     width: 50%;
     margin: auto;
     display: flex;
     flex-flow: column;
     /* padding: 50px; */
     /*justify-content: center; */
-}
-
-.section p {
-    padding-left: 50px;
 }
 
 h1 {
