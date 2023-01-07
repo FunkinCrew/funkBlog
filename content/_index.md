@@ -5,6 +5,8 @@ sort_by = "date"
 template = "index.html"
 +++
 
+![](https://thumbs.gfycat.com/DimpledHarshAdder.webp)
+
 WAHOO!
 
 **This is the friday night funkin website!!**
@@ -13,3 +15,4 @@ WAHOO!
 
 _SWAGGED_
 
+POOP SOCK
