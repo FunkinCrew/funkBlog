@@ -1,3 +1,8 @@
++++
+title = Github actions/issues blog posting
+date = 2023-01-11
++++
+
 This is a test for blog post issues! In fact... I will write the whole idea of the WORKFLOW here.
 
 The idea right now is to sorta use Github issues as drafts of sorts for the blog posting. Github has a decent little markdown text editor, which would play pretty damn nicely with the static site generator!
