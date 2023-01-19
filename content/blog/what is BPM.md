@@ -1,7 +1,7 @@
----
++++
 title = "what is BPM?"
 date = 2023-01-19
----
++++
 a BPM is how many beats there are per minute.
 
 sounds straightforward, but, what is a "beat"? well in my lil DAW there's 4 beats per bar, so it's just a 4th of a bar, clearly. but not all music is written like that. sometimes there's 3 beats per bar... we call that 3/4. so the 3 in that means how many beats there are, and the 4 means... what does the 4 mean...? something to do with steps, surely?
