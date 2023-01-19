@@ -1,5 +1,5 @@
 +++
-title = "what is BPM?
+title = "what is BPM?"
 date = 2023-01-19
 +++
 ** written by PrincessMtH**
