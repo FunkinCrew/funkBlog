@@ -7,6 +7,8 @@ Wahoo, another lil blog test thing!
 
 Today I've been getting back and sorta workin on workflow-ish stuff. Getting quirks figured out, and as of right now... you SHOULD be able to write blog posts and they should be automatically uploaded to the website!!! Building and everything!!
 
+<!-- more -->
+
 Right now, the workflow is 
 - Write github issue in our private little blog-queue repo
 - Post Github issue, that issue will essentially act as the DRAFT

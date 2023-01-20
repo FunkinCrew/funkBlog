@@ -8,7 +8,7 @@
             <h3>{{ page.title }}</h3>
         </header>
         <div align="right">Published on: {{ page.date | date(format="%d/%m/%Y") }}&nbsp;</div>
-        <section class="center">{{ page.summary | safe }}</section>
+        <section class="center">{{ page.reading_time | safe }} minute read{{ page.summary | safe }}</section>
         <footer>
             <a href="{{ page.permalink | safe }}#continue-reading" class="button">Read More</a>
         </footer>

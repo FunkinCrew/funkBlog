@@ -11,6 +11,8 @@ This is a bit of a post to look back at, and I suppose to document the process o
 Moreso for the people in the future looking back a billion blogposts and reading this, and see where this blog started!
 (or digging through my github to see an abandoned project, doh!)
 
+<!-- more -->
+
 ANYWAYS, we want to make lil bloggy stuff, twitter is annoying and i think we like to keep to ourselves a lot of the time. 
 We don't like comments so don't expect some mf forum or someshit around here. 
 
