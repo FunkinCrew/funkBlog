@@ -13,6 +13,4 @@ WAHOO!
 
 🥺😂😂😂😂😂
 
-_SWAGGED_
-
-POOP SOCK
+here you will find the best tips for the viral video game sensation... Friday Night Funkin'!!!

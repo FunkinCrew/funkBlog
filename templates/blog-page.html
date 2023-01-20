@@ -1,6 +1,6 @@
-{% extends "base.html" %} {% block content %}
-<h1 class="title">
-    {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }} {% endblock content %}
+{% extends "base.html" %} {% block title %}{{ page.title }}{% endblock title %} {% block content %}
+<article class="four-fifth center">
+    <h1>{{ page.title }}</h1>
+    {{ page.content | safe }}
+</article>
+{% endblock content %}

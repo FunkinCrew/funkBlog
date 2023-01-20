@@ -3,17 +3,41 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MyBlog</title>
-    <link rel="stylesheet" href=' funny.css '>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <style>
+        .center {
+            margin: 0 auto;
+        }
+        
+        nav {
+            position: absolute;
+        }
+        
+        main {
+            padding-top: 3em;
+        }
+    </style>
 
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            {% block content %} {% endblock %}
+    <nav class="demo">
+        <a href="/" class="brand">
+            <span>Funkin.me</span>
+        </a>
+
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#9776;</label>
+
+        <div class="menu">
+            <a href="/blog" class="pseudo button icon-picture">Blog</a>
         </div>
-    </section>
+    </nav>
+    <main class="flex five">
+        {% block content %} {% endblock %}
+    </main>
 </body>
 
 </html>
