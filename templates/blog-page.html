@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block title %}{{ page.title }}{% endblock title %} {% block content %}
+{% extends "base.html" %} {% block title %}{{ page.title }}{% endblock title %} {%block description %} {{ page.summary | safe}}{% endblock description %}{% block content %}
 <article class="four-fifth center">
     <h1>{{ page.title }}</h1>
     {{ page.content | safe }}
