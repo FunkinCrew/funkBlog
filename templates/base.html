@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <meta property="og:title" content="Funkin.me" />
     <meta property="og:description" content="{% block description %}{% endblock description %}" />
     <meta property="og:type" content="website" />
@@ -16,10 +16,6 @@
             margin: 0 auto;
         }
         
-        nav {
-            position: absolute;
-        }
-        
         main {
             padding-top: 3em;
         }
@@ -28,19 +24,21 @@
 </head>
 
 <body>
-    <nav class="demo">
-        <a href="{{ config.base_url }}" class="brand">
-            <span>Funkin.me</span>
-        </a>
+    <nav class="container">
+        <ul>
+            <li>
+                <a href="{{ config.base_url }}">
+                    <span>Funkin.me</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a></li>
+            <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
+        </ul>
 
-        <input id="bmenub" type="checkbox" class="show">
-        <label for="bmenub" class="burger pseudo button">&#9776;</label>
-
-        <div class="menu">
-            <a href="{{ get_url(path='@/blog/_index.md') }}" class="pseudo button icon-picture">Blog</a>
-        </div>
     </nav>
-    <main class="flex five">
+    <main class="container">
         {% block content %} {% endblock %}
     </main>
 </body>
