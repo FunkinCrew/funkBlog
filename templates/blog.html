@@ -1,17 +1,19 @@
-{% extends "base.html" %} {% block title %}My Blog{% endblock title %} {% block content %}
+{% extends "base.html" %} {% block title %}FUNKIN' BLOG{% endblock title %} {% block content %}
 <article class="four-fifth center">
     <h1>{{ section.title }} </h1>
 
     {% for page in section.pages %}
     <article class="card">
         <header>
-            <h3>{{ page.title }}</h3>
+            <hgroup>
+                <h2> {{ page.title }}</h2>
+                <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%d/%m/%Y") }}&nbsp;</h3>
+            </hgroup>
+
+
         </header>
-        <div align="right">Published on: {{ page.date | date(format="%d/%m/%Y") }}&nbsp;</div>
-        <section class="center">{{ page.reading_time | safe }} minute read{{ page.summary | safe }}</section>
-        <footer>
-            <a href="{{ page.permalink | safe }}#continue-reading" class="button">Read More</a>
-        </footer>
+        <section class="center">{{ page.summary | safe }}</section>
+        <a href="{{ page.permalink | safe }}" role="button">Read full blog post</a>
     </article>
 
     {% endfor %}
