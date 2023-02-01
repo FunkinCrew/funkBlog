@@ -1,21 +1,24 @@
 {% extends "base.html" %} {% block title %}FUNKIN' BLOG{% endblock title %} {% block content %}
-<article class="four-fifth center">
+<div class="container-fluid">
     <h1>{{ section.title }} </h1>
 
     {% for page in section.pages %}
-    <article class="card">
-        <header>
-            <hgroup>
-                <h2> {{ page.title }}</h2>
-                <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%Y/%m/%d") }}&nbsp;</h3>
-            </hgroup>
+
+    <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
+        <span>
+            <header>
+                <hgroup>
+                    <h2> {{ page.title }}</h2>
+                    <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%Y/%m/%d") }}&nbsp;</h3>
+                </hgroup>
 
 
-        </header>
-        <section class="center">{{ page.summary | safe }}</section>
-        <a href="{{ page.permalink | safe }}" role="button">Read full blog post</a>
-    </article>
-
+            </header>
+            <section class="center">{{ page.summary | safe }}</section>
+            <button>read more</button>
+        </span>
+    </a>
+    <section></section>
     {% endfor %}
-</article>
+</div>
 {% endblock content %}

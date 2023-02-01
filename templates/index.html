@@ -1,19 +1,20 @@
 {% extends "base.html" %} {% block title %}FRIDAY NIGHT FUNKIN'{% endblock title %} {% block content %}
-<article class="four-fifth center">
+<div class="container">
     <hgroup>
         <h1>FRIDAY NIGHT FUNKIN' - THE FUNKIN' CREW INC.</h1>
         <h2>What the FUNK is Friday Night Funkin'?</h2>
     </hgroup>
+    
+    <article>
+        <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
 
-    <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
+        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">Funkin' Crew blog!!</a>
+        <p></p>
+        Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
 
-    Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">Funkin' Crew blog!!</a>
-    <p></p>
-    Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
+        <p></p>
 
-    <p></p>
+    </article>
 
-
-
-</article>
+</div>
 {% endblock content %}
