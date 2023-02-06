@@ -3,9 +3,9 @@
     <h1>{{ section.title }} </h1>
 
     {% for page in section.pages %}
-
-    <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
-        <span>
+    <section>
+        <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
+            <span>
             <header>
                 <hgroup>
                     <h2> {{ page.title }}</h2>
@@ -17,8 +17,9 @@
             <section class="center">{{ page.summary | safe }}</section>
             <button>read more</button>
         </span>
-    </a>
-    <section></section>
+        </a>
+    </section>
+
     {% endfor %}
 </div>
 {% endblock content %}
