@@ -1,0 +1,1 @@
+{% set data = load_data(url="https://publish.twitter.com/oembed?url=" ~ tweet, format="json") -%} {% if data %}{{ data.html | safe }}{% else %}Cannot find tweet!{% endif %}
