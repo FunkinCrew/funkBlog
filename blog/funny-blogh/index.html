@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Github actions&#x2F;issues blog posting pt. 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <meta property="og:title" content="Funkin.me" />
+    <meta property="og:description" content=" <p>Wahoo, another lil blog test thing!</p>
+<p>Today I've been getting back and sorta workin on workflow-ish stuff. Getting quirks figured out, and as of right now... you SHOULD be able to write blog posts and they should be automatically uploaded to the website!!! Building and everything!!</p>
+" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
+    <meta property="og:url" content="https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;funny-blogh&#x2F;" />
+    <style>
+        article {
+            margin-top: auto;
+            padding-top: 2em;
+        }
+        
+        main .container {
+            padding-top: -10px;
+            margin-top: 0;
+        }
+        
+        [data-theme="light"],
+         :root:not([data-theme="dark"]) {
+            --primary: #d81b60;
+            --primary-hover: #c2185b;
+            --primary-focus: rgba(216, 27, 96, 0.125);
+            --primary-inverse: #FFF;
+        }
+        /* Pink Dark scheme (Auto) */
+        /* Automatically enabled if user has Dark mode enabled */
+        
+        @media only screen and (prefers-color-scheme: dark) {
+             :root:not([data-theme]) {
+                --primary: #d81b60;
+                --primary-hover: #e91e63;
+                --primary-focus: rgba(216, 27, 96, 0.25);
+                --primary-inverse: #FFF;
+            }
+        }
+        /* Pink Dark scheme (Forced) */
+        /* Enabled if forced with data-theme="dark" */
+        
+        [data-theme="dark"] {
+            --primary: #d81b60;
+            --primary-hover: #e91e63;
+            --primary-focus: rgba(216, 27, 96, 0.25);
+            --primary-inverse: #FFF;
+        }
+        /* Pink (Common styles) */
+        
+         :root {
+            --form-element-active-border-color: var(--primary);
+            --form-element-focus-color: var(--primary-focus);
+            --switch-color: var(--primary-inverse);
+            --switch-checked-background-color: var(--primary);
+        }
+    </style>
+
+</head>
+
+<body>
+    <marquee>friday night funkin' - the funkin' crew inc. 2023</marquee>
+    <nav class="container">
+        <ul>
+            <li>
+                <a href="https:&#x2F;&#x2F;funkin.me">
+                    <span>Funkin.me</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https:&#x2F;&#x2F;funkin.me" class="contrast">
+                    <span>THE OFFICIAL FRIDAY NIGHT FUNKIN' / THE FUNKIN' CREW INC. WEBSITE</span>
+                </a>
+
+            </li>
+
+        </ul>
+        <ul>
+            <li><a href="https://funkin.me/blog/" class="contrast">Blog</a></li>
+            <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
+        </ul>
+
+    </nav>
+    <main class="container">
+        
+<article>
+    
+    <hgroup class="container">
+        <h1>Github actions&#x2F;issues blog posting pt. 2</h1>
+        <h3> 1 minute read - Published on: 2023&#x2F;01&#x2F;18&nbsp;
+        </h3>
+    </hgroup>
+    <details>
+        <summary role="button" class="outline">Table of Contents</summary>
+        
+    </details>
+    <p>Wahoo, another lil blog test thing!</p>
+<p>Today I've been getting back and sorta workin on workflow-ish stuff. Getting quirks figured out, and as of right now... you SHOULD be able to write blog posts and they should be automatically uploaded to the website!!! Building and everything!!</p>
+<span id="continue-reading"></span>
+<p>Right now, the workflow is </p>
+<ul>
+<li>Write github issue in our private little blog-queue repo</li>
+<li>Post Github issue, that issue will essentially act as the DRAFT</li>
+<li>Whenever it's ready to post, just CLOSE the issue</li>
+</ul>
+<p>The next few little concepts I got in my brain is instead of having the blogs be posted whenever anyone pleases, once closed, it gets put into a queue of sorts. Then at the end of the week, all the blogs of the week will be posted in a bit of a mega weekly post! I feel like that's a bit more fun than instant posting, heheh. It's like taking a film photo, and waiting for it to develop!</p>
+<p>More things I want to figure out is getting like... the AUTHOR stuff sorted out as well!!! And then attatching it all to a discord bot!! </p>
+
+</article>
+
+<button type="button" onclick="window.location.href='https://funkin.me/blog/'">Return to blog</button> 
+    </main>
+    <footer>
+        <div align='center'>
+            <a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0' alt='Free Website Hit Counter'></a><br /><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a></small></div>
+
+    </footer>
+
+
+</body>
+
+</html>
