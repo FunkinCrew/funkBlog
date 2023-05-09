@@ -62,30 +62,45 @@
 </head>
 
 <body>
-    <marquee>friday night funkin' - the funkin' crew inc. 2023</marquee>
-    <nav class="container">
-        <ul>
-            <li>
-                <a href="{{ config.base_url }}">
-                    <span>Funkin.me</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="{{ config.base_url }}" class="contrast">
-                    <span>THE OFFICIAL FRIDAY NIGHT FUNKIN' / THE FUNKIN' CREW INC. WEBSITE</span>
-                </a>
 
-            </li>
+    {% set section = get_section(path="blog/_index.md") %}
+    <!-- Just to keep whitespace lol! -->
+    {% set page = section.pages[0] %}
+    <!---->
 
-        </ul>
-        <ul>
-            <li><a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a></li>
-            <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
-        </ul>
+    <marquee scrolldelay="6" truespeed="true" scrollamount="1"> friday night funkin' - the funkin' crew inc. 2023 </marquee>
 
-    </nav>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ config.base_url }}">
+                        <span>Funkin.me</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="{{ config.base_url }}" class="contrast">
+                        <span>THE OFFICIAL FRIDAY NIGHT FUNKIN' / THE FUNKIN' CREW INC. WEBSITE</span>
+                    </a>
+
+                </li>
+
+            </ul>
+            <ul>
+                <li><a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a></li>
+                <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
+            </ul>
+
+        </nav>
+
+        <marquee>
+            <em> Latest blog post: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
+        </marquee>
+    </div>
+
+
     <main class="container">
         {% block content %} {% endblock %}
     </main>
