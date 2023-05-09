@@ -65,7 +65,7 @@
 
     {% set sectionNewest = get_section(path="blog/_index.md") %}
     <!-- Just to keep whitespace lol! -->
-    {% set page = sectionNewest.pages[0] %}
+    {% set pageNewest = sectionNewest.pages[0] %}
     <!---->
 
     <marquee scrolldelay="6" truespeed="true" scrollamount="1"> friday night funkin' - the funkin' crew inc. 2023 </marquee>
@@ -96,7 +96,7 @@
         </nav>
 
         <marquee>
-            <em> Latest blog post: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
+            <em> Latest blog post: <a href="{{ pageNewest.permalink | safe }}">{{ pageNewest.title }}</a> </em>
         </marquee>
     </div>
 
