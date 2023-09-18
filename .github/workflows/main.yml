@@ -6,9 +6,13 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: checkout
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+      - run: npm install
       - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@v0.16.1-1
+        uses: shalzz/zola-deploy-action@v0.18.0
         env:
           PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN}}

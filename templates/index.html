@@ -8,14 +8,14 @@
 
         <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
 
-        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">Funkin' Crew blog!!</a>
+        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">funkin.me blog!!</a>
         <br>
         <!--  -->
         {% set section = get_section(path="blog/_index.md") %}
         <!-- Just to keep whitespace lol! -->
         {% set page = section.pages[0] %}
         <!---->
-        <em> Latest blog post: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
+        <em> Latest blog: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
 
         <p></p>
         Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
@@ -30,33 +30,8 @@
         </p>
         <p>Now <em>The Funkin' Crew Inc.</em> is a slightly larger crew of bozos from all over the damn place</p>
     </section>
-    <section>
-        <hgroup>
-            <h1>RELEASE</h1>
-            <h2><em>When</em> the FUNK is Friday Night Funkin'?</h2>
-        </hgroup>
-        <p>
-            Got a couples years probably.
-        </p>
-    </section>
-    <section>
-        <hgroup>
-            <h1>HUH?</h1>
-            <h2><em>WHY</em> the FUNK is Friday Night Funkin'?</h2>
-        </hgroup>
-        <p>
-            Because we love Newgrounds a whole damn lot.
-        </p>
-    </section>
-    <section>
-        <hgroup>
-            <h1>TECH AND STUFF</h1>
-            <h2><em>HOW</em> the FUNK is Friday Night Funkin'?</h2>
-        </hgroup>
-        <p>
-            We use a variety of tech like Haxe, Adobe Flash, Ableton, etc.
-        </p>
-    </section>
+
+    <center><img src="/img/construction.gif"></center>
 
 </div>
 {% endblock content %}
