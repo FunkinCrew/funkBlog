@@ -5,59 +5,12 @@
     <meta charset="utf-8">
     <title>{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/style.css"/>
     <meta property="og:title" content="Funkin.me" />
     <meta property="og:description" content="{% block description %}{% endblock description %}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
     <meta property="og:url" content="{{ current_url }}" />
-    <style>
-        article {
-            margin-top: auto;
-            padding-top: 2em;
-        }
-        
-        main .container {
-            padding-top: -10px;
-            margin-top: 0;
-        }
-        
-        [data-theme="light"],
-         :root:not([data-theme="dark"]) {
-            --primary: #d81b60;
-            --primary-hover: #c2185b;
-            --primary-focus: rgba(216, 27, 96, 0.125);
-            --primary-inverse: #FFF;
-        }
-        /* Pink Dark scheme (Auto) */
-        /* Automatically enabled if user has Dark mode enabled */
-        
-        @media only screen and (prefers-color-scheme: dark) {
-             :root:not([data-theme]) {
-                --primary: #d81b60;
-                --primary-hover: #e91e63;
-                --primary-focus: rgba(216, 27, 96, 0.25);
-                --primary-inverse: #FFF;
-            }
-        }
-        /* Pink Dark scheme (Forced) */
-        /* Enabled if forced with data-theme="dark" */
-        
-        [data-theme="dark"] {
-            --primary: #d81b60;
-            --primary-hover: #e91e63;
-            --primary-focus: rgba(216, 27, 96, 0.25);
-            --primary-inverse: #FFF;
-        }
-        /* Pink (Common styles) */
-        
-         :root {
-            --form-element-active-border-color: var(--primary);
-            --form-element-focus-color: var(--primary-focus);
-            --switch-color: var(--primary-inverse);
-            --switch-checked-background-color: var(--primary);
-        }
-    </style>
 
 </head>
 

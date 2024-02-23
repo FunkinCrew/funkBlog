@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+      - run: npm install
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@v0.10.0
         env:
