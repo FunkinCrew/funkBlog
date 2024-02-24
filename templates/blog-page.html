@@ -32,6 +32,14 @@ safe}}{% endblock description %}{% block content %}
     </details>
     {{ page.content | safe }}
 </article>
+<div class="grid">
+    {% if page.higher.date %}
+        <button type="button" width="100%" onclick="window.location.href='{{ page.higher.permalink }}'">Previous Post<br>{{ page.higher.title }}</button>
+    {% endif %}
+    <button type="button" width="100%" onclick="window.location.href='{{ get_url(path='@/blog/_index.md') }}'">Return to blog</button>
+    {% if page.lower.date %}
+        <button type="button" width="100%" onclick="window.location.href='{{ page.lower.permalink }}'">Next Post<br>{{ page.lower.title }}</button>
+    {% endif %}
+</div>
 
-<button type="button" onclick="window.location.href='{{ get_url(path='@/blog/_index.md') }}'">Return to blog</button> {%
-endblock content %}
+{% endblock content %}
