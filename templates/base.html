@@ -21,29 +21,23 @@
     {% set pageNewest = sectionNewest.pages[0] %}
     <!---->
 
-    <marquee scrolldelay="6" truespeed="true" scrollamount="1"> friday night funkin' - the funkin' crew inc. 2023 </marquee>
+    <marquee scrolldelay="6" truespeed="true" scrollamount="1"> friday night funkin' - the funkin' crew inc. 2024 </marquee>
 
     <div class="container">
         <nav>
             <ul>
                 <li>
-                    <a href="{{ config.base_url }}">
-                        <span>Funkin.me</span>
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
                     <a href="{{ config.base_url }}" class="contrast">
-                        <span>THE OFFICIAL FRIDAY NIGHT FUNKIN' / THE FUNKIN' CREW INC. WEBSITE</span>
+                        <i class="material-icons">home</i> The Funkin' Crew Inc.
                     </a>
 
                 </li>
-
             </ul>
             <ul>
                 <li><a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a></li>
                 <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
+                <li><a class="material-icons" href="/atom.xml">rss_feed</a></li>
+                <li><a href="https://github.com/FunkinCrew/funkBlog" target="_blank"><img class="github-logo" width="25px" height="25px" src="/icons/github-mark-white.svg" alt="Github Logo"/></a></li>
             </ul>
 
         </nav>

@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block title %}FUNKIN' BLOG{% endblock title %} {% block content %}
 <div class="container-fluid">
     <h1>{{ section.title }} </h1>
+    {{ section.content | safe }}
 
     {% for page in section.pages %}
     <section>
@@ -15,7 +16,7 @@
 
             </header>
             <section class="center">{{ page.summary | safe }}</section>
-            <button>read more</button>
+            <button>Read more <span class="material-icons">newspaper</span></button>
         </span>
         </a>
     </section>

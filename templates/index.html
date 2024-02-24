@@ -8,14 +8,14 @@
 
         <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
 
-        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">Funkin' Crew blog!!</a>
+        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">funkin.me blog!!</a>
         <br>
         <!--  -->
         {% set section = get_section(path="blog/_index.md") %}
         <!-- Just to keep whitespace lol! -->
         {% set page = section.pages[0] %}
         <!---->
-        <em> Latest blog post: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
+        <em> Latest blog: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
 
         <p></p>
         Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
@@ -31,7 +31,7 @@
         <p>Now <em>The Funkin' Crew Inc.</em> is a slightly larger crew of bozos from all over the damn place</p>
     </section>
 
-    <img src="/img/construction.gif">
+    <center><img src="/img/construction.gif"></center>
 
 </div>
 {% endblock content %}
