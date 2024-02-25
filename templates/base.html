@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% macro titleSetup() %}
+{%- if page -%}
+{{ page.title }}
+{% raw %} 
+ - 
+{% endraw %}
+{%- endif -%} {{ config.title }}
+{% endmacro titleSetup %}
+
+{%- macro title() -%}
+{{ self::titleSetup() | linebreaksbr | spaceless | striptags }}
+{%- endmacro title -%}
+
+
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock title %}</title>
+
+
+
+    <title>{{ self::title() }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/style.css"/>
-    <meta property="og:title" content="Funkin.me" />
+    <meta property="og:title" content="{{ self::title()}}" />
     <meta property="og:description" content="{% block description %}{% endblock description %}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
