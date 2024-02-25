@@ -11,15 +11,12 @@
 {% endmacro titleSetup %}
 
 {%- macro title() -%}
-{{ self::titleSetup() | linebreaksbr | spaceless | striptags }}
+{{ self::titleSetup() | linebreaksbr | spaceless | striptags | safe}}
 {%- endmacro title -%}
 
 
 <head>
     <meta charset="utf-8">
-
-
-
     <title>{{ self::title() }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/style.css"/>
