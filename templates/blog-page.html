@@ -1,5 +1,15 @@
-{% extends "base.html" %} {% block title %}{{ page.title }}{% endblock title %} {%block description %} {{ page.summary |
-safe}}{% endblock description %}{% block content %}
+{% extends "base.html" %} 
+{% block title %}{{ page.title }}{% endblock title %}
+
+{%- block description -%}
+{%- if page.summary -%}
+ {{ page.summary | striptags }}
+{%- else -%}
+ {{ page.content | truncate(length=244) | striptags}}
+{%- endif -%}
+{%- endblock description -%}
+
+{% block content %}
 <article>
     
     <hgroup class="container">
