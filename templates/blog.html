@@ -15,7 +15,13 @@
 
 
             </header>
-            <section class="center">{{ page.summary | safe }}</section>
+            <section class="center">
+                {% if page.summary %}
+                {{ page.summary | safe }}
+                {% else %}
+                {{ page.content | truncate(length=244) | striptags }}
+                {% endif %}
+            </section>
             <button>Read more <span class="material-icons">newspaper</span></button>
         </span>
         </a>
