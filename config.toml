@@ -1,5 +1,8 @@
 # The URL the site will be built for
 
+title = "The funkin.me Blog"
+description = "Blog posts about Friday Night Funkin' written by various members of The Funkin' Crew Inc.!"
+
 base_url = "https://funkin.me"
 
 # Whether to automatically compile all Sass files in the sass directory
