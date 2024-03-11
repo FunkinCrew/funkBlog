@@ -34,6 +34,17 @@ section a {
     width: 100%;
 }
 
+small {
+    opacity: 0.8;
+    font-size: 0.7em;
+    text-align: center;
+    margin:auto;
+}
+
+small p {
+    text-align: left;
+}
+
 aside {
     background-color: #111;
     margin-top: 1em;
@@ -41,8 +52,27 @@ aside {
     padding: 1em;
     border-radius: 10px;
 
+    ul, ol {
+        margin:auto;
+        padding-left: 60px;
+        list-style:revert;
+        list-style-position: outside;
+        li {
+            padding:0px;
+            padding-bottom: 0.2em;
+            padding-left: 0.2em;
+            display:list-item;
+        }
+        
+    }
+
     strong, img {
         animation: blink 1s steps(2, start) infinite;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
