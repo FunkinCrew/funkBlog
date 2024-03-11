@@ -33,3 +33,27 @@ video {
 section a {
     width: 100%;
 }
+
+aside {
+    background-color: #111;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+
+    strong, img {
+        animation: blink 1s steps(2, start) infinite;
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
