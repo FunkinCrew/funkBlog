@@ -17,11 +17,11 @@
         <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%Y/%m/%d") }}&nbsp;
         </h3>
     </hgroup>
-    <details>
+    <details class="sticky-toc">
         <summary role="button" class="outline">Table of Contents</summary>
         {% if page.toc %}
             
-            <ul>
+            <ul class="toc">
             {% for h1 in page.toc %}
                 <li>
                     <a href="{{ h1.permalink | safe }}" >{{ h1.title }}</a>

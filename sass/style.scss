@@ -1,6 +1,11 @@
+
 @use "../node_modules/@picocss/pico/scss/pico.scss" with (
     $theme-color: "fuchsia"
 );
+@use "../node_modules/@picocss/pico/scss/colors" as *;
+
+@import "../node_modules/@picocss/pico/css/pico.colors.css";
+
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
@@ -14,6 +19,7 @@
     direction: ltr;
     vertical-align: text-top;
 }
+
 
 img {
     max-width: 75%;
@@ -58,6 +64,35 @@ small p {
     text-align: left;
 }
 
+.toc {
+    outline: 2px solid;
+    outline-color: $fuchsia-500;
+    border-radius: 20px;
+    backdrop-filter: blur(1.5em) grayscale(0.8);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    li {
+        width: auto;
+        list-style: none;
+        margin-bottom: 0px;
+        a {
+            text-decoration: none;
+        }
+        
+    }
+    
+}
+
+.sticky-toc {
+    left:50px;
+    position: sticky;
+    top: 5px;
+    summary {
+        backdrop-filter: blur(0.5em);
+    }
+    
+}
+
 aside {
     background-color: #111;
     margin-top: 1em;
@@ -80,6 +115,9 @@ aside {
     }
 
     strong, img {
+        margin-left: initial;
+        margin-right: initial;
+        display:initial;
         animation: blink 1s steps(2, start) infinite;
     }
 
