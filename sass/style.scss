@@ -15,6 +15,13 @@
     vertical-align: text-top;
 }
 
+img {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
 article {
     margin-top: auto;
     padding-top: 2em;
@@ -27,7 +34,10 @@ main .container {
 
 video {
     width: 100%; 
-    height: auto; 
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 section a {
@@ -35,10 +45,13 @@ section a {
 }
 
 small {
+    max-width: 75%;
     opacity: 0.8;
     font-size: 0.7em;
     text-align: center;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
 }
 
 small p {
