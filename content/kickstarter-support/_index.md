@@ -33,4 +33,4 @@ where backers edit and modify their information such as:
 - general changing survey information
 - email address / backer portal account information changes
 
-Again, if you need any assitance with any of that, do reach out at to our support email `support@funkin.me`
+Again, if you need any assistance with any of that, do reach out at to our support email `support@funkin.me`
