@@ -11,5 +11,9 @@
   },
   "[xml]": {
     "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2
   }
 }

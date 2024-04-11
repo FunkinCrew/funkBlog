@@ -14,10 +14,10 @@
 
   <hgroup class="container">
     <h1>{{ page.title }}</h1>
-    <h3>
+    <p>
       {{ page.reading_time | safe }}&nbsp;minute&nbsp;read
       - Published&nbsp;on:&nbsp;{{ page.date | date(format="%Y/%m/%d") }}
-    </h3>
+    </p>
   </hgroup>
 
   <details class="sticky-toc">
@@ -27,12 +27,13 @@
     <ul class="toc">
       {% for h1 in page.toc %}
       <li>
-        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        <a href="{{ h1.permalink | safe }}" onclick="close_toc()">{{
+          h1.title }}</a>
         {% if h1.children %}
         <ul>
           {% for h2 in h1.children %}
           <li>
-            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+            <a href="{{ h2.permalink | safe }}" onclick="close_toc()">{{ h2.title }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -44,7 +45,26 @@
     {% endif %}
   </details>
 
-  {{ page.content | safe }}
+  {{ page.content
+  | regex_replace(pattern=`h3`, rep=`h4`)
+  | regex_replace(pattern=`h2`, rep=`h3`)
+  | regex_replace(pattern=`h1`, rep=`h2`)
+  | regex_replace(
+  pattern=`<h(\d) id="(.+)">(.+)</h(\d)>`,
+  rep=`<h$1 id="h$1-$2" class="relative">
+    <div class="absolute heading-anchor" id="$2"></div>
+    $3
+  </h$1>
+  `)
+  | safe
+  }}
+
+  <script>
+    const toc = document.getElementsByClassName('sticky-toc')[0];
+    const close_toc = () => toc.open = false;
+
+    const h1 = document.getElementsByTagName('h1');
+  </script>
 
 </article>
 
