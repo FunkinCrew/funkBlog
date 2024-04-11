@@ -14,7 +14,7 @@ for generation, and [Pico CSS](https://picocss.com/) for styling.
   manager!
 - We get Pico CSS from NPM, so you need to [install node](https://nodejs.org) if
   you don't already have it.
-  - Then you can just `npm install` to get Pico CSS
+  - Then you can just `npm ci` to get Pico CSS
 
 # Running the site
 
