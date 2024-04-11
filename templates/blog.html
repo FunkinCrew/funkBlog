@@ -1,32 +1,35 @@
 {% extends "base.html" %} {% block title %}FUNKIN' BLOG{% endblock title %} {% block content %}
 <div class="container-fluid">
-    <h1>{{ section.title }} </h1>
-    {{ section.content | safe }}
 
-    {% for page in section.pages %}
-    <section>
-        <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
-            <span>
-            <header>
-                <hgroup>
-                    <h2> {{ page.title }}</h2>
-                    <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%Y/%m/%d") }}&nbsp;</h3>
-                </hgroup>
+  <h1>{{ section.title }} </h1>
+  {{ section.content | safe }}
+
+  {% for page in section.pages %}
+  <section>
+    <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
+      <span>
+        <header>
+          <hgroup>
+            <h2> {{ page.title }}</h2>
+            <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date |
+              date(format="%Y/%m/%d") }}&nbsp;</h3>
+          </hgroup>
 
 
-            </header>
-            <section class="center">
-                {% if page.summary %}
-                {{ page.summary | safe }}
-                {% else %}
-                {{ page.content | truncate(length=244) | striptags }}
-                {% endif %}
-            </section>
-            <button>Read more <span class="material-icons">newspaper</span></button>
-        </span>
-        </a>
-    </section>
+        </header>
+        <section class="center">
+          {% if page.summary %}
+          {{ page.summary | safe }}
+          {% else %}
+          {{ page.content | truncate(length=244) | striptags }}
+          {% endif %}
+        </section>
+        <button>Read more <span class="material-icons">newspaper</span></button>
+      </span>
+    </a>
+  </section>
 
-    {% endfor %}
+  {% endfor %}
+
 </div>
 {% endblock content %}
