@@ -1,11 +1,7 @@
-
-@use "../node_modules/@picocss/pico/scss/pico.scss" with (
-    $theme-color: "fuchsia"
-);
+@use "../node_modules/@picocss/pico/scss/pico.scss" with ($theme-color: "fuchsia");
 @use "../node_modules/@picocss/pico/scss/colors" as *;
 
 @import "../node_modules/@picocss/pico/css/pico.colors.css";
-
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
@@ -30,7 +26,7 @@ img {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-    display:block;
+    display: block;
 }
 
 article {
@@ -44,7 +40,7 @@ main .container {
 }
 
 video {
-    width: 100%; 
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -60,8 +56,8 @@ small {
     opacity: 0.8;
     font-size: 0.7em;
     text-align: center;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
@@ -76,26 +72,29 @@ small p {
     backdrop-filter: blur(1.5em) grayscale(0.8);
     padding-top: 1em;
     padding-bottom: 1em;
+
     li {
         width: auto;
         list-style: none;
         margin-bottom: 0px;
+
         a {
             text-decoration: none;
         }
-        
+
     }
-    
+
 }
 
 .sticky-toc {
-    left:50px;
+    left: 50px;
     position: sticky;
     top: 5px;
+
     summary {
         backdrop-filter: blur(0.5em);
     }
-    
+
 }
 
 aside {
@@ -105,24 +104,27 @@ aside {
     padding: 1em;
     border-radius: 10px;
 
-    ul, ol {
-        margin:auto;
+    ul,
+    ol {
+        margin: auto;
         padding-left: 60px;
-        list-style:revert;
+        list-style: revert;
         list-style-position: outside;
+
         li {
-            padding:0px;
+            padding: 0px;
             padding-bottom: 0.2em;
             padding-left: 0.2em;
-            display:list-item;
+            display: list-item;
         }
-        
+
     }
 
-    strong, img {
+    strong,
+    img {
         margin-left: initial;
         margin-right: initial;
-        display:initial;
+        display: initial;
         animation: blink 1s steps(2, start) infinite;
     }
 
@@ -134,12 +136,14 @@ aside {
 
 @keyframes blink {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     50% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
