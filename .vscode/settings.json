@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "**/templates/**/*.html": "handlebars",
+    "**/templates/**/*.xml": "handlebars"
+  }
+}
