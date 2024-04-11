@@ -72,6 +72,7 @@ small p {
     backdrop-filter: blur(1.5em) grayscale(0.8);
     padding-top: 1em;
     padding-bottom: 1em;
+    z-index: 10;
 
     li {
         width: auto;
@@ -83,18 +84,17 @@ small p {
         }
 
     }
-
 }
 
 .sticky-toc {
     left: 50px;
     position: sticky;
     top: 5px;
+    z-index: 10;
 
     summary {
         backdrop-filter: blur(0.5em);
     }
-
 }
 
 aside {
