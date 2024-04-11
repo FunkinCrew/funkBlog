@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "**/templates/**/*.html": "handlebars",
+    "**/templates/**/*.xml": "handlebars"
+  },
+  "[handlebars]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[xml]": {
+    "editor.tabSize": 2
+  }
+}
