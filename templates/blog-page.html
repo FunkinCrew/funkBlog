@@ -1,55 +1,71 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock title %}
 
 {%- block description -%}
 {%- if page.summary -%}
- {{ page.summary | striptags }}
+{{ page.summary | striptags }}
 {%- else -%}
- {{ page.content | truncate(length=244) | striptags}}
+{{ page.content | truncate(length=244) | striptags}}
 {%- endif -%}
 {%- endblock description -%}
 
 {% block content %}
 <article>
-    
-    <hgroup class="container">
-        <h1>{{ page.title }}</h1>
-        <h3> {{ page.reading_time | safe }} minute read - Published on: {{ page.date | date(format="%Y/%m/%d") }}&nbsp;
-        </h3>
-    </hgroup>
-    <details class="sticky-toc">
-        <summary role="button" class="outline">Table of Contents</summary>
-        {% if page.toc %}
-            
-            <ul class="toc">
-            {% for h1 in page.toc %}
-                <li>
-                    <a href="{{ h1.permalink | safe }}" >{{ h1.title }}</a>
-                    {% if h1.children %}
-                        <ul>
-                            {% for h2 in h1.children %}
-                                <li>
-                                    <a href="{{ h2.permalink | safe }}" >{{ h2.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                </li>
-            {% endfor %}
-            </ul>
-        
+
+  <hgroup class="container">
+    <h1>{{ page.title }}</h1>
+    <h3>
+      {{ page.reading_time | safe }}&nbsp;minute&nbsp;read
+      - Published&nbsp;on:&nbsp;{{ page.date | date(format="%Y/%m/%d") }}
+    </h3>
+  </hgroup>
+
+  <details class="sticky-toc">
+    <summary role="button" class="outline">Table of Contents</summary>
+    {% if page.toc %}
+
+    <ul class="toc">
+      {% for h1 in page.toc %}
+      <li>
+        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        {% if h1.children %}
+        <ul>
+          {% for h2 in h1.children %}
+          <li>
+            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
         {% endif %}
-    </details>
-    {{ page.content | safe }}
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% endif %}
+  </details>
+
+  {{ page.content | safe }}
+
 </article>
+
 <div class="grid">
-    {% if page.higher.date %}
-        <button type="button" width="100%" onclick="window.location.href='{{ page.higher.permalink }}'">Previous Post<br>{{ page.higher.title }}</button>
-    {% endif %}
-    <button type="button" width="100%" onclick="window.location.href='{{ get_url(path='@/blog/_index.md') }}'">Return to blog</button>
-    {% if page.lower.date %}
-        <button type="button" width="100%" onclick="window.location.href='{{ page.lower.permalink }}'">Next Post<br>{{ page.lower.title }}</button>
-    {% endif %}
+
+  {% if page.higher.date %}
+  <button type="button" width="100%" onclick="window.location.href='{{ page.higher.permalink }}'">
+    Previous Post <br> {{ page.higher.title }}
+  </button>
+  {% endif %}
+
+  <button type="button" width="100%" onclick="window.location.href='{{ get_url(path='@/blog/_index.md') }}'">
+    Return to blog
+  </button>
+
+  {% if page.lower.date %}
+  <button type="button" width="100%" onclick="window.location.href='{{ page.lower.permalink }}'">
+    Next Post <br> {{ page.lower.title }}
+  </button>
+  {% endif %}
+
 </div>
 
 {% endblock content %}

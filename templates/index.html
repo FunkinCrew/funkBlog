@@ -1,37 +1,40 @@
 {% extends "base.html" %} {% block title %}FRIDAY NIGHT FUNKIN'{% endblock title %} {% block content %}
 <div class="container">
-    <section>
-        <hgroup>
-            <h1>FRIDAY NIGHT FUNKIN'</h1>
-            <h2><em>What</em> the FUNK is Friday Night Funkin'?</h2>
-        </hgroup>
 
-        <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
+  <section>
+    <hgroup>
+      <h1>FRIDAY NIGHT FUNKIN'</h1>
+      <h2><em>What</em> the FUNK is Friday Night Funkin'?</h2>
+    </hgroup>
 
-        Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">funkin.me blog!!</a>
-        <br>
-        <!--  -->
-        {% set section = get_section(path="blog/_index.md") %}
-        <!-- Just to keep whitespace lol! -->
-        {% set page = section.pages[0] %}
-        <!---->
-        <em> Latest blog: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
+    <p>Friday Night Funkin' is a rhythm game created by The Funkin' Crew Inc.</p>
 
-        <p></p>
-        Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
-    </section>
-    <section>
-        <hgroup>
-            <h1>THE FUNKIN' CREW INC.</h1>
-            <h2><em>Who</em> the FUNK is Friday Night Funkin'?</h2>
-        </hgroup>
-        <p>
-            The Funkin' Crew Inc. was originally a few bozos who made a rhythm game in a weekend, who then created a Kickstarter campaign that raised over $2,000,000.
-        </p>
-        <p>Now <em>The Funkin' Crew Inc.</em> is a slightly larger crew of bozos from all over the damn place</p>
-    </section>
+    Visit the <a href="{{ get_url(path='@/blog/_index.md') }}">funkin.me blog!!</a>
+    <br>
+    <!--  -->
+    {% set section = get_section(path="blog/_index.md") %}
+    <!-- Just to keep whitespace lol! -->
+    {% set page = section.pages[0] %}
+    <!---->
+    <em> Latest blog: <a href="{{ page.permalink | safe }}">{{ page.title }}</a> </em>
 
-    <center><img src="/img/construction.gif"></center>
+    <p></p>
+    Visit the <a href="https://github.com/FunkinCrew/funkin-resources#funkin-resources">Funkin' resources hub!</a>
+  </section>
+
+  <section>
+    <hgroup>
+      <h1>THE FUNKIN' CREW INC.</h1>
+      <h2><em>Who</em> the FUNK is Friday Night Funkin'?</h2>
+    </hgroup>
+    <p>
+      The Funkin' Crew Inc. was originally a few bozos who made a rhythm game in a weekend,
+      who then created a Kickstarter campaign that raised over $2,000,000.
+    </p>
+    <p>Now <em>The Funkin' Crew Inc.</em> is a slightly larger crew of bozos from all over the damn place</p>
+  </section>
+
+  <center><img src="/img/construction.gif"></center>
 
 </div>
 {% endblock content %}

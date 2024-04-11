@@ -4,9 +4,7 @@
 {% macro titleSetup() %}
 {%- if page -%}
 {{ page.title }}
-{% raw %} 
- - 
-{% endraw %}
+{% raw %} - {% endraw %}
 {%- endif -%} {{ config.title }}
 {% endmacro titleSetup %}
 
@@ -16,69 +14,98 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <title>{{ self::title() }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/style.css"/>
-    <meta property="og:title" content="{{ self::title()}}" />
-    <meta property="og:description" content="{% block description %}{% endblock description %}" />
-    <meta property="og:site_name" content="funkin.me">
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
-    <meta property="og:url" content="{{ current_url }}" />
-    <meta name="theme-color" content="#ff1cb0">
+  <meta charset="utf-8">
+  <title>{{ self::title() }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/style.css" />
+  <meta property="og:title" content="{{ self::title()}}" />
+  <meta property="og:description" content="{% block description %}{% endblock description %}" />
+  <meta property="og:site_name" content="funkin.me">
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
+  <meta property="og:url" content="{{ current_url }}" />
+  <meta name="theme-color" content="#ff1cb0">
 
 </head>
 
 <body>
 
-    {% set sectionNewest = get_section(path="blog/_index.md") %}
-    <!-- Just to keep whitespace lol! -->
-    {% set pageNewest = sectionNewest.pages[0] %}
-    <!---->
+  {% set sectionNewest = get_section(path="blog/_index.md") %}
+  <!-- Just to keep whitespace lol! -->
+  {% set pageNewest = sectionNewest.pages[0] %}
+  <!---->
 
-    <marquee scrolldelay="6" truespeed="true" scrollamount="1"> friday night funkin' - the funkin' crew inc. 2024 </marquee>
+  <marquee scrolldelay="6" truespeed="true" scrollamount="1">
+    friday night funkin' - the funkin' crew inc. 2024
+  </marquee>
 
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="{{ config.base_url }}" class="contrast">
-                        <i class="material-icons">home</i> The Funkin' Crew Inc.
-                    </a>
+  <div class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="{{ config.base_url }}" class="contrast">
+            <i class="material-icons">home</i>
+            The Funkin' Crew Inc.
+          </a>
 
-                </li>
-            </ul>
-            <ul>
-                <li><a class="contrast" href="https://kickstarter.funkin.me" target="_blank">Kickstarter Backer Portal <span class="material-icons icon-sm">
-                    open_in_new
-                    </span></a></li>
-                <li>
-                    <a href="{{ get_url(path='@/kickstarter-support/_index.md') }}" class="contrast">Kickstarter Support</a>
-                </li>
-                <li><a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a></li>
-                <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
-                <li><a class="material-icons" href="/atom.xml">rss_feed</a></li>
-                <li><a href="https://github.com/FunkinCrew/funkBlog" target="_blank"><img class="github-logo" width="25px" height="25px" src="/icons/github-mark-white.svg" alt="Github Logo"/></a></li>
-            </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="contrast" href="https://kickstarter.funkin.me" target="_blank">
+            Kickstarter Backer Portal
+            <span class="material-icons icon-sm">
+              open_in_new
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ get_url(path='@/kickstarter-support/_index.md') }}" class="contrast">
+            Kickstarter Support
+          </a>
+        </li>
+        <li>
+          <a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a>
+        </li>
+        <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
+        <li>
+          <a class="material-icons" href="/atom.xml">rss_feed</a>
+        </li>
+        <li>
+          <a href="https://github.com/FunkinCrew/funkBlog" target="_blank">
+            <img class="github-logo" width="25px" height="25px" src="/icons/github-mark-white.svg" alt="Github Logo" />
+          </a>
+        </li>
+      </ul>
 
-        </nav>
+    </nav>
 
-        <marquee>
-            <em> Latest blog post: <a href="{{ pageNewest.permalink | safe }}">{{ pageNewest.title }}</a> </em>
-        </marquee>
+    <marquee>
+      <em>
+        Latest blog post: <a href="{{ pageNewest.permalink | safe }}">{{ pageNewest.title }}</a>
+      </em>
+    </marquee>
+  </div>
+
+  <main class="container">
+    {% block content %} {% endblock %}
+  </main>
+
+  <footer>
+    <div align='center'>
+      <a href='https://www.free-website-hit-counter.com'>
+        <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0'
+          alt='Free Website Hit Counter'>
+      </a>
+      <br />
+      <small>
+        <a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">
+          Free website hit counter
+        </a>
+      </small>
     </div>
-
-
-    <main class="container">
-        {% block content %} {% endblock %}
-    </main>
-    <footer>
-        <div align='center'>
-            <a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0' alt='Free Website Hit Counter'></a><br /><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a></small></div>
-
-    </footer>
-
+  </footer>
 
 </body>
 
