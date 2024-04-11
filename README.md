@@ -8,7 +8,7 @@ for generation, and [Pico CSS](https://picocss.com/) for styling.
 
 # Setup
 
-- Installation instrucitons for
+- Installation instructions for
   [zola are here](https://www.getzola.org/documentation/getting-started/installation/).
   It is just a binary file you either add to your path, or install via package
   manager!
