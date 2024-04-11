@@ -1,26 +1,29 @@
 @use "../node_modules/@picocss/pico/scss/pico.scss" with ($theme-color: "fuchsia");
 @use "../node_modules/@picocss/pico/scss/colors" as *;
 
-@import "../node_modules/@picocss/pico/css/pico.colors.css";
+@import url("https://api.iconify.design/mdi.css?icons=github,rss,home,alert-decagram,open-in-new");
 
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+i {
+    font-size: 1.25rem;
 
-.material-icons {
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    vertical-align: text-top;
+    // line height adjustment; thanks picocss
+    transform: translateY(0.25rem);
+
+    &.sm {
+        font-size: 1rem;
+        transform: translateY(0.125rem);
+    }
+
+    &.xs {
+        font-size: 0.75rem;
+    }
 }
 
-.icon-sm {
-    font-size: small;
-    vertical-align: middle;
+hgroup {
+    p {
+        margin-top: 0.25rem;
+    }
 }
-
 
 img {
     max-width: 75%;
@@ -31,11 +34,10 @@ img {
 
 article {
     margin-top: auto;
-    padding-top: 2em;
+    padding: 1.5rem;
 }
 
 main .container {
-    padding-top: -10px;
     margin-top: 0;
 }
 
@@ -89,7 +91,7 @@ small p {
 .sticky-toc {
     left: 50px;
     position: sticky;
-    top: 5px;
+    top: 0.5rem;
     z-index: 10;
 
     summary {
@@ -99,10 +101,11 @@ small p {
 
 aside {
     background-color: #111;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     border-radius: 10px;
+    position: relative;
 
     ul,
     ol {
@@ -120,30 +123,46 @@ aside {
 
     }
 
-    strong,
-    img {
-        margin-left: initial;
-        margin-right: initial;
-        display: initial;
-        animation: blink 1s steps(2, start) infinite;
+    i:first-child {
+        position: absolute;
+        left: .875rem;
+        top: 1.125rem;
     }
 
-    p {
-        padding-left: 40px;
-        padding-right: 40px;
+    p,
+    strong:nth-child(2) {
+        padding: 0 1.875rem;
+    }
+
+    strong:nth-child(2) {
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+        font-size: 1rem;
+        display: block;
+
+        &.amber {
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    .amber {
+        color: $amber-400;
     }
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
+.absolute {
+    position: absolute;
+}
 
-    50% {
-        opacity: 0;
-    }
+.relative {
+    position: relative;
+}
 
-    100% {
-        opacity: 1;
-    }
+.heading-anchor {
+    top: -6rem;
+}
+
+img.github-logo {
+    color: white;
 }

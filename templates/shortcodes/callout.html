@@ -1,0 +1,7 @@
+<aside>
+  <i class="icon--mdi icon--mdi--{{ icon }}{% if icon_color %} {{ icon_color }}{% endif %}"></i>
+  <strong {% if heading_color %} class="{{ heading_color }}" {% endif %}>{{ title | safe }}</strong>
+  <p>
+    {{ body | markdown | safe }}
+  </p>
+</aside>
