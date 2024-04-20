@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block title %}FUNKIN' BLOG{% endblock title %} {% block content %}
 <div class="container-fluid">
 
-  <h1>{{ section.title }} </h1>
+  <h1>{{ section.title }}</h1>
   {{ section.content | safe }}
 
   {% for page in section.pages %}
-  <section>
-    <a href="{{ page.permalink | safe }}" role="button" class="contrast outline">
+  <section class="p-8 rounded-xl bg-gray-920">
+    <a href="{{ page.permalink | safe }}" role="button" class="text-gray-100 hover:text-gray-50 no-underline hover:no-underline">
       <span>
         <header>
           <hgroup>
@@ -15,17 +15,15 @@
               date(format="%Y/%m/%d") }}&nbsp;
             </p>
           </hgroup>
-
-
         </header>
-        <section class="center">
+        <div class="my-4">
           {% if page.summary %}
           {{ page.summary | safe }}
           {% else %}
           {{ page.content | truncate(length=244) | striptags }}
           {% endif %}
-        </section>
-        <button>Read more <span class="material-icons">newspaper</span></button>
+        </div>
+        <button class="px-4 py-3 bg-primary text-white rounded-lg">Read more <i class="i-mdi-newspaper"></i></button>
       </span>
     </a>
   </section>

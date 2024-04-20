@@ -1,0 +1,37 @@
+a, button {
+    &:has(> i) {
+        @apply flex flex-row items-center gap-1.5;
+    }
+}
+
+.prose {
+    hgroup {
+        p {
+            @apply absolute m-0 bottom-0 left-0 translate-y-7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            @apply mt-0;
+        }
+
+        @apply relative mb-12;
+    }
+
+    section {
+        @apply my-8;
+    }
+
+    code {
+        @apply bg-gray-900 px-2 py-1.5 rounded-md font-normal text-gray-100;
+
+        &::before, &::after {
+            @apply hidden;
+        }
+    }
+}
+
+details {
+    summary {
+        @apply relative select-none list-none;
+    }
+}

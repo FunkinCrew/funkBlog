@@ -1,0 +1,38 @@
+details.toc {
+    &.sticky {
+        @apply z-10 top-2;
+    }
+
+    summary {
+        @apply text-lg px-4 py-3 rounded flex justify-between items-center primary border border-primary z-10 backdrop-blur-md bg-transparent;
+    }
+
+    > ul {
+        @apply mt-4 border border-primary z-10 rounded-xl backdrop-blur-xl bg-gray-950 bg-opacity-70 text-lg;
+
+        ul {
+            @apply ml-8;
+        }
+
+        li {
+            width: auto;
+            list-style: none;
+    
+            a {
+                @apply no-underline;
+            }
+        }
+
+        > li {
+            @apply my-2 mx-8;
+
+            &:first-child {
+                @apply mt-6;
+            }
+
+            &:last-child {
+                @apply mb-6;
+            }
+        }
+    }
+}

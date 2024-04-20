@@ -3,6 +3,8 @@ title = "Kickstarter Support"
 template = "page.html"
 +++
 
+<section>
+
 You can email `support@funkin.me` with any inquires relating to backer support such as:
 
 - shipping information assistance
@@ -24,6 +26,10 @@ As of writing, it's just one of the devs here helping with emails, so replies mi
 Very soon we will have a dedicated email support person, hopefully aiming to have quicker response times, 
 thank you for your patience!
 
+</section>
+
+<section>
+
 # Backer Portal
 
 We have a site dedicated for our Kickstarter backers at [kickstarter.funkin.me](https://kickstarter.funkin.me)
@@ -34,3 +40,5 @@ where backers edit and modify their information such as:
 - email address / backer portal account information changes
 
 Again, if you need any assistance with any of that, do reach out at to our support email `support@funkin.me`
+
+</section>

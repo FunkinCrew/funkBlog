@@ -1,7 +1,11 @@
 {
   "files.associations": {
     "**/templates/**/*.html": "handlebars",
-    "**/templates/**/*.xml": "handlebars"
+    "**/templates/**/*.xml": "handlebars",
+    "**/styles/**/*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
   },
   "[handlebars]": {
     "editor.tabSize": 2
@@ -13,7 +17,7 @@
     "editor.tabSize": 2
   },
   "[markdown]": {
-    "editor.formatOnSave": false,
     "editor.tabSize": 2
-  }
+  },
+  "editor.formatOnSave": false
 }

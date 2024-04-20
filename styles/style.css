@@ -1,0 +1,48 @@
+@import "tailwindcss/base";
+@import "base.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "colors.css";
+@import "toc.css";
+@import "aside.css";
+
+img {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+main .container {
+    margin-top: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+section a {
+    width: 100%;
+}
+
+small {
+    max-width: 75%;
+    opacity: 0.8;
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+small p {
+    text-align: left;
+}
+
+.heading-anchor {
+    top: -6rem;
+}

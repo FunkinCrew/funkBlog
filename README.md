@@ -4,7 +4,7 @@ This is the source code repository for the FUNKIN CREW WEBSITE,
 [`funkin.me`](https://funkin.me)
 
 It is a static site generated website, using [Zola](https://www.getzola.org/)
-for generation, and [Pico CSS](https://picocss.com/) for styling.
+for generation, [Tailwind CSS](https://tailwindcss.com/) for styling, and [Iconify Design](https://iconify.design/) for icons.
 
 # Setup
 
@@ -18,10 +18,5 @@ for generation, and [Pico CSS](https://picocss.com/) for styling.
 
 # Running the site
 
-From the
-[Zola CLI usage docs](https://www.getzola.org/documentation/getting-started/cli-usage/)
-
-> [Zola only has 4 commands: `init`, `build`, `serve` and `check`.](https://www.getzola.org/documentation/getting-started/cli-usage/)
-
-So you just need to run `zola serve` to compile and run the site on a local web
-server.
+- locally using `npm run dev`
+- in production using `npm run build` and then `zola build`
