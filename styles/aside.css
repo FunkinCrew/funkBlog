@@ -1,0 +1,51 @@
+aside {
+    @apply bg-gray-970;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+
+    ul,
+    ol {
+        margin: auto;
+        padding-left: 60px;
+        list-style: revert;
+        list-style-position: outside;
+
+        li {
+            padding: 0px;
+            padding-bottom: 0.2em;
+            padding-left: 0.2em;
+            display: list-item;
+        }
+
+    }
+
+    i:first-child {
+        @apply absolute text-xl -translate-y-1/2 -translate-x-1/2;
+        left: 1.25em;
+        top: 1.75em;
+    }
+
+    p,
+    strong:nth-child(2) {
+        padding: 0 1.875rem;
+    }
+
+    strong:nth-child(2) {
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+        font-size: 1rem;
+        display: block;
+
+        &.amber {
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    .amber {
+        @apply text-amber-500;
+    }
+}

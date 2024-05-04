@@ -17,7 +17,7 @@
   <meta charset="utf-8">
   <title>{{ self::title() }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="{{ get_url(path="styles/style.css") | safe }}" />
   <meta property="og:title" content="{{ self::title()}}" />
   <meta property="og:description" content="{% block description %}{% endblock description %}" />
   <meta property="og:site_name" content="funkin.me">
@@ -29,70 +29,51 @@
 
 </head>
 
-<body>
+<body class="flex flex-col">
 
   {% set sectionNewest = get_section(path="blog/_index.md") %}
   <!-- Just to keep whitespace lol! -->
   {% set pageNewest = sectionNewest.pages[0] %}
   <!---->
 
-  <marquee scrolldelay="6" truespeed="true" scrollamount="1">
+  <marquee scrolldelay="6" truespeed="true" scrollamount="1" class="text-gray-100">
     friday night funkin' - the funkin' crew inc. 2024
   </marquee>
 
-  <div class="container">
-    <nav>
-      <ul>
-        <li>
-          <a href="{{ config.base_url }}" class="contrast">
-            <i class="icon--mdi icon--mdi--home"></i>
-            The Funkin' Crew Inc.
-          </a>
-
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a class="contrast" href="https://kickstarter.funkin.me" target="_blank">
-            Kickstarter Backer Portal
-            <i class="sm icon--mdi icon--mdi--open-in-new"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{{ get_url(path='@/kickstarter-support/_index.md') }}" class="contrast">
-            Kickstarter Support
-          </a>
-        </li>
-        <li>
-          <a href="{{ get_url(path='@/blog/_index.md') }}" class="contrast">Blog</a>
-        </li>
-        <!-- <li><a href="https://" class="contrast">Blog</a></li> -->
-        <li>
-          <a href="/atom.xml">
-            <i class="icon--mdi icon--mdi--rss"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/FunkinCrew/funkBlog" target="_blank" class="contrast">
-            <i class="icon--mdi icon--mdi--github"></i>
-          </a>
-        </li>
-      </ul>
-
+  <div class="max-w-5xl w-full mx-auto">
+    <nav class="flex flex-row items-center gap-4 py-2 *:no-underline">
+      <a href="{{ config.base_url }}" class="text-gray-50 grow">
+        <i class="i-mdi-home"></i>
+        The Funkin' Crew Inc.
+      </a>
+      <a href="https://kickstarter.funkin.me" target="_blank" class="text-gray-50">
+        Kickstarter Backer Portal
+        <i class="sm i-mdi-open-in-new"></i>
+      </a>
+      <a href="{{ get_url(path='@/kickstarter-support/_index.md') }}" class="text-gray-50">
+        Kickstarter Support
+      </a>
+      <a href="{{ get_url(path='@/blog/_index.md') }}" class="text-gray-50">Blog</a>
+      <a href="/atom.xml">
+        <i class="i-mdi-rss"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew/funkBlog" target="_blank" class="text-gray-50">
+        <i class="i-mdi-github"></i>
+      </a>
     </nav>
 
-    <marquee>
+    <marquee class="text-gray-100 my-4">
       <em>
         Latest blog post: <a href="{{ pageNewest.permalink | safe }}">{{ pageNewest.title }}</a>
       </em>
     </marquee>
   </div>
 
-  <main class="container">
+  <main class="max-w-5xl w-full mx-auto prose prose-invert">
     {% block content %} {% endblock %}
   </main>
 
-  <footer>
+  <footer class="my-8">
     <div align='center'>
       <a href='https://www.free-website-hit-counter.com'>
         <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0'
