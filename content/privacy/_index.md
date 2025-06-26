@@ -28,11 +28,11 @@ If you do not consent to this Privacy Policy, please do not access or otherwise 
  
 The Funkin’ Crew Inc.  (“Company,” “we,” “us,” or “our”) will be the entity responsible for your data. To ask questions or comment about this privacy policy and our privacy practices, you can contact us at:
  
-Email: support@funkin.me
+Email: <a href="mailto:support\@funkin.me">support\@funkin.me</a>
  
 2. CHILDREN
  
-Our Services are not directed to or intended for children who are under the age of 13. Company does not knowingly collect Personal Data from children under the age of 13. If we learn we have collected or received Personal Data from a child under 16 without verification of parental consent, we will delete that information. If you have reason to believe that a child under the age of 13 has provided Personal Data to Company through the Services please contact us at support@funkin.me and we will endeavor to delete that information from our databases. This in compliance with the Children’s Online Privacy Protection Act (COPPA) and the General Data Privacy Regulation (GDPR).
+Our Services are not directed to or intended for children who are under the age of 13. Company does not knowingly collect Personal Data from children under the age of 13. If we learn we have collected or received Personal Data from a child under 16 without verification of parental consent, we will delete that information. If you have reason to believe that a child under the age of 13 has provided Personal Data to Company through the Services please contact us at <a href="mailto:support\@funkin.me">support\@funkin.me</a> and we will endeavor to delete that information from our databases. This in compliance with the Children’s Online Privacy Protection Act (COPPA) and the General Data Privacy Regulation (GDPR).
  
 3. PERSONAL DATA WE COLLECT
  
@@ -197,7 +197,7 @@ Data Rights of European Residents: The laws of the United Kingdom and the Europe
  
 - The right to data portability - You have the right to request that Company transfer the data that we have collected to another organization, or directly to you, under certain conditions.
  
-If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at support@funkin.me
+If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:support\@funkin.me">support\@funkin.me</a>
  
  
 10. CHANGES TO THE PRIVACY POLICY
@@ -206,4 +206,4 @@ The Services and our business may change from time to time. As a result, we may 
  
 11. CONTACT US
  
-If you have any questions about our Privacy Policy or information practices, please feel free to contact us at our designated request address: support@funkin.me
+If you have any questions about our Privacy Policy or information practices, please feel free to contact us at our designated request address: <a href="mailto:support\@funkin.me">support\@funkin.me</a>
