@@ -5,7 +5,7 @@ template = "page.html"
 
 <section>
 
-You can email <a href="mailto:support\@funkin.me">support\@funkin.me</a> with any inquires relating to backer support such as:
+You can email <a href="mailto:support@funkin.me">support\@funkin.me</a> with any inquires relating to backer support such as:
 
 - shipping information assistance
 - help with our backer portal ([kickstarter.funkin.me](https://kickstarter.funkin.me))
@@ -19,7 +19,7 @@ Within your email, include helpful information such as:
 - Your backer number
 - Your name you put as your "name in credits"
 
-We will try to get back to you with assistance via the <a href="mailto:support\@funkin.me">support\@funkin.me</a> email!
+We will try to get back to you with assistance via the <a href="mailto:support@funkin.me">support\@funkin.me</a> email!
 
 As of writing, it's just one of the devs here helping with emails, so replies might take a couple days to get to.
 <br>
@@ -39,6 +39,6 @@ where backers edit and modify their information such as:
 - general changing survey information
 - email address / backer portal account information changes
 
-Again, if you need any assistance with any of that, do reach out at to our support email <a href="mailto:support\@funkin.me">support\@funkin.me</a>
+Again, if you need any assistance with any of that, do reach out at to our support email <a href="mailto:support@funkin.me">support\@funkin.me</a>
 
 </section>
