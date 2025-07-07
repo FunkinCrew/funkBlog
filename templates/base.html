@@ -24,7 +24,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:image"
     content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" />
+  {%- if current_url -%}
   <meta property="og:url" content="{{ current_url }}" />
+  {%- endif -%}
   <meta name="theme-color" content="#ff1cb0">
 
 </head>
@@ -69,11 +71,22 @@
     </marquee>
   </div>
 
-  <main class="max-w-5xl w-full mx-auto prose prose-invert">
+  <main class="max-w-5xl w-full mx-auto prose prose-invert px-2 sm:px-0 leading-6">
     {% block content %} {% endblock %}
   </main>
 
   <footer class="my-8">
+    <div class="flex flex-row justify-center gap-1">
+      <a href="https://www.youtube.com/@FNF_Developers">
+        <i class="i-mdi-youtube"></i>
+      </a>
+      <a href="https://x.com/fnf_developers">
+        <i class="i-mdi-twitter"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew">
+        <i class="i-mdi-github"></i>
+      </a>
+    </div>
     <!--div align='center'>
       <a href='https://www.free-website-hit-counter.com'>
         <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0'

@@ -1,9 +1,12 @@
-<head>
-  <title>404 LOL</title>
-</head>
+{% extends "base.html" %}
 
-<body>
-  <h1>
-    404 SCREEN
-  </h1>
-</body>
+{% block content %}
+<div class="container-fluid">
+<h1>
+  404 SCREEN
+</h1>
+<p>Unforunately this page doesn't exist! Try again! </p>
+<a href="/">Return Home</a>
+</div>
+  
+{% endblock content %}
