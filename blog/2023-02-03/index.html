@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEEK OF 2023&#x2F;02&#x2F;03: IN FUNKIN&#x27; WE TRUST - Friday Night Funkin&#x27; - The Funkin&#x27; Crew Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://funkin.me/styles/style.css" />
+  <meta property="og:title" content="WEEK OF 2023&#x2F;02&#x2F;03: IN FUNKIN&#x27; WE TRUST - Friday Night Funkin&#x27; - The Funkin&#x27; Crew Inc." />
+  <meta property="og:description" content="HELLO everyone, this is our THIRD WEEK of funkin blog posts!!!
+Got a small little handful of blogs here... one particularly about... kickstarter backend stuff! thats right, new authors here! yaaahoooooooooo!!!" />
+  <meta property="og:site_name" content="funkin.me">
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" /><meta property="og:url" content="https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2023-02-03&#x2F;" /><meta name="theme-color" content="#ff1cb0">
+
+</head>
+
+<body class="flex flex-col">
+
+  
+  <!-- Just to keep whitespace lol! -->
+  
+  <!---->
+
+  <marquee scrolldelay="6" truespeed="true" scrollamount="1" class="text-gray-100">
+    friday night funkin' - the funkin' crew inc. 2025
+  </marquee>
+
+  <div class="max-w-5xl w-full mx-auto">
+    <nav class="flex flex-row items-center gap-4 py-2 *:no-underline">
+      <a href="https:&#x2F;&#x2F;funkin.me" class="text-gray-50 grow">
+        <i class="i-mdi-home"></i>
+        The Funkin' Crew Inc.
+      </a>
+      <a href="https://kickstarter.funkin.me" target="_blank" class="text-gray-50">
+        Kickstarter Backer Portal
+        <i class="sm i-mdi-open-in-new"></i>
+      </a>
+      <a href="https://funkin.me/kickstarter-support/" class="text-gray-50">
+        Kickstarter Support
+      </a>
+      <a href="https://funkin.me/blog/" class="text-gray-50">Blog</a>
+      <a href="/atom.xml">
+        <i class="i-mdi-rss"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew/funkBlog" target="_blank" class="text-gray-50">
+        <i class="i-mdi-github"></i>
+      </a>
+    </nav>
+
+    <marquee class="text-gray-100 my-4">
+      <em>
+        Latest blog post: <a href="https://funkin.me/blog/2025-03-31/">The Pit Stop 2 Content Update is now available!</a>
+      </em>
+    </marquee>
+  </div>
+
+  <main class="max-w-5xl w-full mx-auto prose prose-invert px-2 sm:px-0 leading-6">
+    
+<article class="bg-gray-920 rounded p-8 mb-4">
+
+  <hgroup class="container">
+    <h1>WEEK OF 2023&#x2F;02&#x2F;03: IN FUNKIN&#x27; WE TRUST</h1>
+    <p>
+      9&nbsp;minute&nbsp;read
+      - Published&nbsp;on:&nbsp;2023&#x2F;02&#x2F;03
+    </p>
+  </hgroup>
+
+  <details class="sticky toc group">
+    <summary role="button">
+      Table of Contents
+      <i class="i-mdi-chevron-right group-open:i-mdi-chevron-down text-gray-200"></i>
+    </summary>
+    
+
+    <ul class="not-prose">
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#week-7-source-code-released" onclick="close_toc()">Week 7 source code RELEASED</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#kickstarter-backend-stuff-missing-surveys-check-the-end-of-the-post" onclick="close_toc()">Kickstarter (Backend) Stuff! Missing Surveys check the end of the post</a>
+        
+        <ul>
+          
+          <li>
+            <a href="https://funkin.me/blog/2023-02-03/#one-last-thing-important" onclick="close_toc()">One last thing (important)</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#eric-s-lil-update" onclick="close_toc()">Eric&#x27;s lil update</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#funkin-resources-x-funkin-me-blog" onclick="close_toc()">funkin-resources x funkin.me blog</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#summary-of-last-week-s-funkin-resources-additions" onclick="close_toc()">Summary of last week&#x27;s funkin-resources additions!</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2023-02-03/#closing-thoughts" onclick="close_toc()">Closing thoughts</a>
+        
+      </li>
+      
+    </ul>
+
+    
+  </details>
+
+  <p>HELLO everyone, this is our THIRD WEEK of funkin blog posts!!!</p>
+<p>Got a small little handful of blogs here... one particularly about... kickstarter backend stuff! thats right, new authors here! yaaahoooooooooo!!!</p>
+<span id="continue-reading"></span>
+<p>This is still not a fully automated process lol.... I should get on that sometime this weekend maybe. Usually on the weekends I spend time with my girlfriend, but she got damn sick! So can't see her this weekend, so it's lookin like a weekend of coding! Hopefully a bit more progress on website stuff heheh. Might even get the domain moved to funkin.me finally lol</p>
+<p>ANYWAYS here's this weeks blog posts!</p>
+<h2 id="h2-week-7-source-code-released" class="relative">
+    <div class="absolute heading-anchor" id="week-7-source-code-released"></div>
+    Week 7 source code RELEASED
+  </h2>
+  
+<p><em>by ninjamuffin99</em></p>
+<p>YEP it's been a long time coming... I know!! A lotta apologies!!! But in my defense.... what other games promise to even GIVE you source code!! Listen cut us some damn slack with it!</p>
+<p>ANYWAYS yeah I finally tossed up the ol week 7 source code up onto the main <a href="https://github.com/FunkinCrew/Funkin">Friday Night Funkin' github repo</a></p>
+<p>Why now? Well partly I feel like it's been long enough, partly I figured that people would be happy ENOUGH with JUST the barebones of week 7 code. We wanted it to work on desktop, we wanted certain things fixed, we wanted to just wait until next update was done and out, the list goes on. ALL of that code was really written in a different era. Our LIVES were completely different just a little under two years ago. We had our full and undivided focus and LIFE behind the game at the time, and nowadays we still pretty much do. But it really was a different era of staying up until 7AM programming, and then waking up to program all day until the late hours. We had the Kickstarter on our minds, which despite our wacky little stretch goals, we had NO IDEA what the reception of the Kickstarter would be. Would we barely scrape by and get to our goal? Would we smash past it? How far past it would we smash? As the story goes, we raised over 2 million dollars! We had to really take shit seriously and focus on things OTHER than main game work. We had to focus not only on our OWN LIVES and workflows, but taking care of the game as a LEGIT JOB and all that. Doing all the paperwork to become a company, file the proper taxes, get proper bank accounts, payroll, employees, contracts, THAT list is one that really goes on lol.</p>
+<p>One thing about the week 7 build is that the cutscenes are implemented... STRANGELY lol</p>
+<p>Originally the week 7 cutscenes were implemented in the same way that many of the other in-game animations are implemented, with spritesheet animation. But eventually, the animations sorta out grew the capacity of HaxeFlixel's texture size limits, and we had to split it up a certain way. THEN we ran into memory issues where the game would stutter and lag on load, and it would desync the audio for the animations! I tried a few different solutions, but in the timeframe we had (a lot of the work was done through March 2021... a single damn month!) I just ended up doing it naive way, and then just screen recording that, and then just doing a Newgrounds only build! We had always intended week 7 to be Newgrounds exclusive temporarily, although apologies it has lasted this long bwah!</p>
+<p>At this point in time I feel like most lil FNF offshoots and whatnot have surpassed the work I put into week 7, figuring that most of these offshoots already have had multiple times the amount of development time as the whole game at that point had!</p>
+<h2 id="h2-kickstarter-backend-stuff-missing-surveys-check-the-end-of-the-post" class="relative">
+    <div class="absolute heading-anchor" id="kickstarter-backend-stuff-missing-surveys-check-the-end-of-the-post"></div>
+    Kickstarter (Backend) Stuff! Missing Surveys check the end of the post
+  </h2>
+  
+<p><em>by Shamwayne</em></p>
+<p>Sup everyone! I'm Shingi, the constantly sleep deprived and all round dumbass gremlin working on the Kickstarter Backend stuff (sorry to everyone who didn't get the gig lol).</p>
+<p>What's this "Kickstarter Backend" thingy you ask? Well...it's basically going to be a portal where all the Backers can manage their profiles, view their rewards (and potentially track their shipment/delivery progress, still working on that one) as well as answer surveys and get updates on everything FNF! Well that's the overall idea - just think of most of the problems with the current Kickstarter setup and the new Portal will probably have a fix for it.</p>
+<p>Huh, i was supposed to add a small section about why this new backend portal instead of just working with KS but i kinda answered that already. Welp, that leaves me with no choice but to give you spoilers for upcoming content! Wahoo!</p>
+<details>
+  <summary>Spoilers for upcoming Update!</summary>
+  <pre>[REDACTED]</pre>
+<p>Umm....nevermind! Just had a nice chat with a friendly FNF Ninja(muffin)s and they told me to keep quiet for now.</p>
+</details>
+<p>That's about it for me, I do occasionally check the Kickstarter for ideas and things to improve on so if you have ideas and suggestions feel free to post there. Also <strong>holy crap it's been 6 months since the last Kickstarter Update??! WTF</strong> (I know you're reading this Cam, go finish writing the KS update right now lol).</p>
+<p>One more thing: The Ninjas might have stopped me now, but who knows what easter eggs i'll plant in the Portal when it's done ;-)</p>
+<p>One other thing: shout out to <strong>NamelessEntity</strong>, <strong>DanTheMan_1234</strong>, <strong>Braxton</strong>, <strong>Redberd36</strong> on the KS page - whenever i visit KS i see you peeps active on the page. I have more i wanna say but this post is is too long already for my liking but i just wanna say all the Backers are valid and your feedback is seen, don't worry. speaking of Backer feedback...</p>
+<h4 id="h4-one-last-thing-important" class="relative">
+    <div class="absolute heading-anchor" id="one-last-thing-important"></div>
+    One last thing (important)
+  </h4>
+  
+<p>If you haven't received a Survey for something, and <strong>You've seen everyone else with a similar Reward Tier get their stuff</strong>  comment on the KS with <em>RE: Missing Survey</em> and your username (if it's different from the one on the KS page). No promises it will be fixed anytime soon (probably until the Portal is done which will have the ability to fix it built-in) but this is more of a check to see if there's a problem and how severe it is.</p>
+<h2 id="h2-eric-s-lil-update" class="relative">
+    <div class="absolute heading-anchor" id="eric-s-lil-update"></div>
+    Eric's lil update
+  </h2>
+  
+<p><em>by EliteMasterEric</em></p>
+<p>Hello every-nya it's me Eric!!!!</p>
+<p><img src="https://user-images.githubusercontent.com/4635334/216710283-20753afd-dcf7-40ab-8bbd-614b51a43ce6.jpg" alt="hello-everynya" /></p>
+<p>Uhhhhh I'm still working on that input survey here's a preview of what it looks like</p>
+<p><img src="https://user-images.githubusercontent.com/4635334/216709589-a94238f5-3393-4b09-856a-8c3baac86bcb.png" alt="image" /></p>
+<p>Yes one of the input systems in the survey IS copied from the October 2020 codebase and yes it DOES feel awful you need to know what's bad in order to know what's good</p>
+<p>Work on this stuff might get pushed off a bit while i work on some other stuff so please be patient lol</p>
+<h2 id="h2-funkin-resources-x-funkin-me-blog" class="relative">
+    <div class="absolute heading-anchor" id="funkin-resources-x-funkin-me-blog"></div>
+    funkin-resources x funkin.me blog
+  </h2>
+  
+<p><em>by ninjamuffin99</em></p>
+<p>I try to slowly advance the funkin blog website, eventually we will have it be our MAIN WEBSITE for the game, our company, blog, etc !!! I want it to be good website! Ever since we released FNF on Newgrounds 2 years ago, I have wanted to be the person that created the Funkin website... because I really want to polish my web design knowhow! I'm a punk ass bitch like that! But also it helps that it is very fun and refreshing to work on a project like this (the website that is, although FNF is very nice to work on!)</p>
+<p>ANYWAYS this week's nice little change is a nicer INTEGRATION of sorts with our little funkin-resources github list! As mentioned previously in the blog, it's a nice little list of resources related to FNF, mostly modding related resources as of now. In these little weekly digests of Funkin blogposts, at the end I will include all the changes from the week, which is done automatically!!</p>
+<p>It runs off a Github action that was created by <a href="https://github.com/aurel300">Aurel300</a> on Github, after he saw my post in the <a href="https://github.com/FunkinCrew/funkinBounties">funkinBounties</a> github page! Paid him a cool 50$ for it!</p>
+<h2 id="h2-summary-of-last-week-s-funkin-resources-additions" class="relative">
+    <div class="absolute heading-anchor" id="summary-of-last-week-s-funkin-resources-additions"></div>
+    Summary of last week's funkin-resources additions!
+  </h2>
+  
+<p><em>by github-actions[bot]</em></p>
+<ul>
+<li><a href="https://api.github.com/repos/FunkinCrew/funkin-resources/pulls/76">PR FunkinCrew/funkin-resources#76, "Add Sparrow Atlas Resizer &amp; Funkin Rewritten" by GuglioIsStupid</a> merged at 2023-02-02T17:48:46Z, added:
+<ul>
+<li>1 line:
+<ul>
+<li><a href="https://github.com/KadeDev/SparrowAtlasResizer">Sparrow Atlas Resizer</a> - Simple program for resizing sparrow atlas png &amp; xml's</li>
+</ul>
+</li>
+<li>1 line:
+<ul>
+<li><a href="https://github.com/HTV04/funkin-rewritten">Funkin' Rewritten</a> - A rewrite of FNF in lua that is very focused on optimization. Can also compile for Nintendo Switch homebrew</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://api.github.com/repos/FunkinCrew/funkin-resources/pulls/73">PR FunkinCrew/funkin-resources#73, "free-softare to free-software + Modding+" by SmeckoGeck46</a> merged at 2023-02-02T17:48:16Z, added:
+<ul>
+<li>2 lines:
+<ul>
+<li><a href="https://github.com/FunkinModdingPlus/ModdingPlus">Modding+</a> - An engine with HScript support with the intention of easy customization and enhanced gameplay options.</li>
+<li><a href="https://github.com/AFunkinDisappointment/DisappointingPlus">Disappointing Plus</a> - A fork of Modding+ with additional features such as framerate adjustment, camera movement whenever a character sings, and an improved character swap function.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://api.github.com/repos/FunkinCrew/funkin-resources/pulls/64">PR FunkinCrew/funkin-resources#64, "Add an online Spritesheet Maker animation tool." by EyeDaleHim</a> merged at 2023-01-29T22:44:49Z, added:
+<ul>
+<li>1 line:
+<ul>
+<li><a href="https://www.leshylabs.com/apps/sstool/">Free Online Spritesheet Maker</a> - Combines multiple images together into a spritesheet, an alternative to Free Texture Packer. Make sure to select <code>XML</code> as the output format.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="h2-closing-thoughts" class="relative">
+    <div class="absolute heading-anchor" id="closing-thoughts"></div>
+    Closing thoughts
+  </h2>
+  
+<p>the site seems like it's finally starting to come together, and working on it I feel got me into the habit of... WORKING on PROGRAMMING type things more... for the past while it's really felt administrative heavy and biz bullshit! they were gonna introduce themselves, but this week was also the first official week of working with our new producer project manager person on the team! it's lookin pretty good so far, even if it's just someone to help answer and get back to emails lol</p>
+<p>SONG OF THA WEEK: <div >
+  <iframe style=" width: 100%; height: 480px;"
+    src="https://www.youtube-nocookie.com/embed/nxEKH7-d5dI"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div></p>
+
+
+  <script>
+    const toc = document.getElementsByClassName('sticky-toc')[0];
+    const close_toc = () => toc.open = false;
+
+    const h1 = document.getElementsByTagName('h1');
+  </script>
+
+</article>
+
+<div class="flex flex-row gap-2 my-4">
+
+  
+  <button type="button" width="100%" onclick="window.location.href='https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2023-01-27&#x2F;'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Previous Post <br> WEEK OF 2023&#x2F;01&#x2F;27: THE SECOND BLOG POST LOL!
+  </button>
+  
+
+  <button type="button" width="100%" onclick="window.location.href='https://funkin.me/blog/'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Return to blog
+  </button>
+
+  
+  <button type="button" width="100%" onclick="window.location.href='https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2023-02-10&#x2F;'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Next Post <br> WEEK OF 2023&#x2F;02&#x2F;10: THE FUNK AND THE FURIOUS
+  </button>
+  
+
+</div>
+
+
+  </main>
+
+  <footer class="my-8">
+    <div class="flex flex-row justify-center gap-1">
+      <a href="https://www.youtube.com/@FNF_Developers">
+        <i class="i-mdi-youtube"></i>
+      </a>
+      <a href="https://x.com/fnf_developers">
+        <i class="i-mdi-twitter"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew">
+        <i class="i-mdi-github"></i>
+      </a>
+    </div>
+    <!--div align='center'>
+      <a href='https://www.free-website-hit-counter.com'>
+        <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0'
+          alt='Free Website Hit Counter'>
+      </a>
+      <br />
+      <small>
+        <a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">
+          Free website hit counter
+        </a>
+      </small>
+  </div-->
+  </footer>
+
+</body>
+
+</html>

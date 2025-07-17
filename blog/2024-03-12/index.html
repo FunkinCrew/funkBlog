@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEEK OF 2024&#x2F;03&#x2F;12: the funkblog with factorio references... - Friday Night Funkin&#x27; - The Funkin&#x27; Crew Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://funkin.me/styles/style.css" />
+  <meta property="og:title" content="WEEK OF 2024&#x2F;03&#x2F;12: the funkblog with factorio references... - Friday Night Funkin&#x27; - The Funkin&#x27; Crew Inc." />
+  <meta property="og:description" content="welcome back everyone to another fnf weekly digest! this week is week where we hear about some fun inside behind the scenes tech at funkin crew that that help make FNF that no one knows about... it&#x27;s time to dive into some fun tech goodies!" />
+  <meta property="og:site_name" content="funkin.me">
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://user-images.githubusercontent.com/22229331/213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif" /><meta property="og:url" content="https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2024-03-12&#x2F;" /><meta name="theme-color" content="#ff1cb0">
+
+</head>
+
+<body class="flex flex-col">
+
+  
+  <!-- Just to keep whitespace lol! -->
+  
+  <!---->
+
+  <marquee scrolldelay="6" truespeed="true" scrollamount="1" class="text-gray-100">
+    friday night funkin' - the funkin' crew inc. 2025
+  </marquee>
+
+  <div class="max-w-5xl w-full mx-auto">
+    <nav class="flex flex-row items-center gap-4 py-2 *:no-underline">
+      <a href="https:&#x2F;&#x2F;funkin.me" class="text-gray-50 grow">
+        <i class="i-mdi-home"></i>
+        The Funkin' Crew Inc.
+      </a>
+      <a href="https://kickstarter.funkin.me" target="_blank" class="text-gray-50">
+        Kickstarter Backer Portal
+        <i class="sm i-mdi-open-in-new"></i>
+      </a>
+      <a href="https://funkin.me/kickstarter-support/" class="text-gray-50">
+        Kickstarter Support
+      </a>
+      <a href="https://funkin.me/blog/" class="text-gray-50">Blog</a>
+      <a href="/atom.xml">
+        <i class="i-mdi-rss"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew/funkBlog" target="_blank" class="text-gray-50">
+        <i class="i-mdi-github"></i>
+      </a>
+    </nav>
+
+    <marquee class="text-gray-100 my-4">
+      <em>
+        Latest blog post: <a href="https://funkin.me/blog/2025-03-31/">The Pit Stop 2 Content Update is now available!</a>
+      </em>
+    </marquee>
+  </div>
+
+  <main class="max-w-5xl w-full mx-auto prose prose-invert px-2 sm:px-0 leading-6">
+    
+<article class="bg-gray-920 rounded p-8 mb-4">
+
+  <hgroup class="container">
+    <h1>WEEK OF 2024&#x2F;03&#x2F;12: the funkblog with factorio references...</h1>
+    <p>
+      12&nbsp;minute&nbsp;read
+      - Published&nbsp;on:&nbsp;2024&#x2F;03&#x2F;12
+    </p>
+  </hgroup>
+
+  <details class="sticky toc group">
+    <summary role="button">
+      Table of Contents
+      <i class="i-mdi-chevron-right group-open:i-mdi-chevron-down text-gray-200"></i>
+    </summary>
+    
+
+    <ul class="not-prose">
+      
+      <li>
+        <a href="https://funkin.me/blog/2024-03-12/#chart-editor-playtesting" onclick="close_toc()">Chart Editor: Playtesting!</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2024-03-12/#a-challenger-approaches" onclick="close_toc()">A challenger approaches</a>
+        
+        <ul>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#cue-2013-dubstep-intro" onclick="close_toc()">cue 2013 dubstep intro</a>
+          </li>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#frenzy-with-friends" onclick="close_toc()">Frenzy with friends</a>
+          </li>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#integration-hell" onclick="close_toc()">Integration hell</a>
+          </li>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#on-the-next-episode-of-funkin-blog" onclick="close_toc()">On the next episode of Funkin’ blog…</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2024-03-12/#making-games-is-like-playing-cookie-clicker" onclick="close_toc()">Making games is like playing cookie clicker</a>
+        
+        <ul>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#a-scientific-breakthrough" onclick="close_toc()">A scientific breakthrough</a>
+          </li>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#the-factory-must-grow" onclick="close_toc()">The factory must grow</a>
+          </li>
+          
+          <li>
+            <a href="https://funkin.me/blog/2024-03-12/#funkin-2160p-bluray-remux-hevc-dts-hd-ma-truehd-7-1-atmos-fgt" onclick="close_toc()">Funkin.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2024-03-12/#pins-progres" onclick="close_toc()">PINS PROGRES</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://funkin.me/blog/2024-03-12/#outro-for-the-week" onclick="close_toc()">outro for the week</a>
+        
+      </li>
+      
+    </ul>
+
+    
+  </details>
+
+  <p>welcome back everyone to another fnf weekly digest! this week is week where we hear about some fun inside behind the scenes tech at funkin crew that that help make FNF that no one knows about... it's time to dive into some fun tech goodies!</p>
+<span id="continue-reading"></span><h2 id="h2-chart-editor-playtesting" class="relative">
+    <div class="absolute heading-anchor" id="chart-editor-playtesting"></div>
+    Chart Editor: Playtesting!
+  </h2>
+  
+<p><em>by Eric</em></p>
+<p>Eric again with another Chart Editor feature breakdown! This time, I wanted to go over exactly how testing your chart works.</p>
+<p>At any time while charting your song, you can press ENTER to be redirected immediately to the level with all the characters and stuff where you can playtest your song. However, if you press SHIFT-ENTER, instead of being directed to the level you are directed to a minimal play state. No characters, no stage props, faster loading times.</p>
+<p><img src="/img/2024-03-12/chart-editor-playtest-properties.png" alt="IMAGE" /></p>
+<p>There are a bunch of options available to customize the playtest mode too! You can enable Practice Mode (don't lose if you have zero health), or Bot Play (the CPU plays the song for you). There is also an option to start playtesting your song at the playhead rather than at the start, so if you're charting the middle of the song, you don't have to wait to test that part!</p>
+<p><img src="/img/2024-03-12/chart-editor-playtest-minimal.png" alt="IMAGE" /></p>
+<p>These features come together to make previewing charts easier and more fluid than with the old editor. Quicker playtesting of specific sections means quicker iteration and improvement!</p>
+<h2 id="h2-a-challenger-approaches" class="relative">
+    <div class="absolute heading-anchor" id="a-challenger-approaches"></div>
+    A challenger approaches
+  </h2>
+  
+<p><em>by hazel</em></p>
+<h3 id="h3-cue-2013-dubstep-intro" class="relative">
+    <div class="absolute heading-anchor" id="cue-2013-dubstep-intro"></div>
+    <em>cue 2013 dubstep intro</em>
+  </h3>
+  
+<p>There’s always things happening behind the scenes when making a game. I’m one of the people building the stuff behind the curtain, and we haven’t met yet, which is a shame!</p>
+<p>So, heya, I’m hazel (they). I’m doing subtle software &amp; scalable server sorcery for The Funkin’ Crew since January 2023. And it’s time you get to hear about some of the things I’ve built! And also time I stop procrastinating writing a blog post. I’ve wanted to since last September!!!</p>
+<hr />
+<h3 id="h3-frenzy-with-friends" class="relative">
+    <div class="absolute heading-anchor" id="frenzy-with-friends"></div>
+    Frenzy with friends
+  </h3>
+  
+<p>If you’ve got keen eyes you might’ve noticed one of our Kickstarter goals going unaddressed so far: <em>Online Leaderboards</em></p>
+<p>Earlier this year, I’ve built the API for that — which is the actual brains. It handles things like storing and sorting the scores you submit, returning them in the right order, filtering them by song, user, score range, …</p>
+<aside>
+  <i class="i-mdi-alert-decagram amber"></i>
+  <strong  class="amber" >Nerd stuff: Scalability</strong>
+  <p>
+    <p>The API is written in Elixir using Phoenix Framework.<br />
+I chose this combination because it allows us to painlessly scale up in the future. For example, there are going to be a lot more people playing at once right after release, or after a new update.<br />
+The reason Elixir is great at this is thanks to BEAM, the virtual machine used by Erlang which Elixir is written on top of. Erlang was originally built for Ericsson (large Swedish telecom) with distributed systems (a lot more than one server running thing at once) in mind, and therefore makes it super easy to just add or remove capacity based on how many people are currently actively using it.</p>
+
+  </p>
+</aside><aside>
+  <i class="i-mdi-alert-decagram amber"></i>
+  <strong  class="amber" >Nerd stuff: A little functional programming, as a treat</strong>
+  <p>
+    <p>Another reason for this combination is developer experience.<br />
+Elixir follows functional programming paradigms, but in a way that feels very practical. You end up getting a lot of the benefits (avoiding side effects, straightforward state management, elegant recursive solutions) with not a lot of the usual drawbacks.<br />
+Phoenix Framework is a framework (duh) for making web applications, which is also incredibly convenient. It bundles a database driver, live updates via WebSockets, and frontend and backend routes all in one convenient package — which is just about everything we need.</p>
+
+  </p>
+</aside>
+<p>Once we integrate the leaderboard system into the game (hopefully soon), we don’t want it to rely on the game to do any computation (like your final score). This avoids issues like a bug in the game (or the score display) completely voiding your amazing #1 run, while also helping us prevent malicious submissions by being able to audit the inputs server-side.</p>
+<hr />
+<h3 id="h3-integration-hell" class="relative">
+    <div class="absolute heading-anchor" id="integration-hell"></div>
+    Integration hell
+  </h3>
+  
+<p>There are a lot of moving parts here, and making them all work reliably took more effort than I initially thought. Here’s a list of steps that happen when you play through a song:</p>
+<ol>
+<li>the game records all of your inputs</li>
+<li>the game turns your inputs into a package that can be easily shared between computers</li>
+<li>the game sends that package to the leaderboard API</li>
+<li>the API receives that data, and unpacks the inputs from it</li>
+<li>the API plays through the song using those inputs (it doesn’t actually play the song, it instead does some cool math!)</li>
+<li>the API calculates your score from the hits, misses, etc.</li>
+<li>your score gets tagged with a bunch of metadata and stored</li>
+</ol>
+<p>An issue in any one of those would change your score, and tracing back where exactly that happened can become messy quickly when it’s more than just one issue.</p>
+<p>Fortunately, we had a lot of technical documentation already written, like how score is supposed to be calculated, or how that data package is laid out.</p>
+<p>Unfortunately, despite that, some bugs with parity between the score shown by the game and the score returned by the API were really subtle and mischievous. For example, I had an issue with scores being consistently off by a tiny amount that took us a solid week to get to the bottom of, and in the end came down to a mistake each in both steps 2 and 4.</p>
+<hr />
+<h3 id="h3-on-the-next-episode-of-funkin-blog" class="relative">
+    <div class="absolute heading-anchor" id="on-the-next-episode-of-funkin-blog"></div>
+    On the next episode of Funkin’ blog…
+  </h3>
+  
+<p>If that wasn’t behind-the-scenes enough for you, get ready for my collection of tools you’ll never even interact with when playing the game! Only when developing it!!</p>
+<h2 id="h2-making-games-is-like-playing-cookie-clicker" class="relative">
+    <div class="absolute heading-anchor" id="making-games-is-like-playing-cookie-clicker"></div>
+    Making games is like playing cookie clicker
+  </h2>
+  
+<p><em>by hazel</em></p>
+<h3 id="h3-a-scientific-breakthrough" class="relative">
+    <div class="absolute heading-anchor" id="a-scientific-breakthrough"></div>
+    A scientific breakthrough
+  </h3>
+  
+<p>Idea: Invest a bit of extra time now to build automations and tools, and in the long run save everyone from repetitive and overwhelming tasks.</p>
+<p>During the last couple months I’ve done exactly that with two goals:</p>
+<ol>
+<li>writing and testing the game should be as uninvolved as possible</li>
+<li>things that run outside of the game should be easy to set up and easy to maintain</li>
+</ol>
+<hr />
+<h3 id="h3-the-factory-must-grow" class="relative">
+    <div class="absolute heading-anchor" id="the-factory-must-grow"></div>
+    The factory must grow
+  </h3>
+  
+<p>With multiple people making one game, we work on lots of different versions (“branches”) in parallel. These branches each contain a small set of changes, like a fix for a problem, or a new feature.</p>
+<p>After going through testing and review, those changes then all get merged into one main branch (sometimes still referred to as “master”). This is the version that eventually will be the one you get to play.</p>
+<p>The goal is to, for each branch, automate:</p>
+<ol>
+<li>getting the code</li>
+<li>turning that code into a playable game (”building”)</li>
+<li>getting the built game onto the computer of our testers</li>
+</ol>
+<p>Doing these steps manually can easily take upwards of half an hour, and multiple people doing them over and over again is a lot of time and electricity needlessly spent.</p>
+<h4 id="h4-upgrading-assembling-machines" class="relative">
+    <div class="absolute heading-anchor" id="upgrading-assembling-machines"></div>
+    Upgrading assembling machines
+  </h4>
+  
+<p>I’ve done a lot of upgrades to the automations that build the game for us.
+Since we now have someone dedicated to managing server shenanigans (that’s also me!), we decided to ditch paying GitHub for server power and set up a bunch of our own for way less!
+After doing that and then dedicating time to just cleaning up all the automation code and investigating issues caused by third party tools we use, we finally have builds that work all the time across MacOS, Windows, and Linux.
+Speeding them up is another thing that was desperately needed, turning this:</p>
+<p><img src="/img/2024-03-12/create-windows-long.png" alt="A screenshot of an automation result showing: success, create-nightly-win, took 50 minutes and 33 seconds" /></p>
+<p>With caching (avoiding doing the same work twice by saving tasks that take a long time), some code cleanup, and a lot of bug fixes, into this:</p>
+<p><img src="/img/2024-03-12/create-windows-short.png" alt="A screenshot of an automation result showing: success, create-nightly-win, took 4 minutes and 45 seconds" /></p>
+<h4 id="h4-adding-conveyor-belts" class="relative">
+    <div class="absolute heading-anchor" id="adding-conveyor-belts"></div>
+    Adding conveyor belts
+  </h4>
+  
+<p>A cool internal tool we now have is the Funkin’ Launcher (don’t worry: <strong>the final game will not ship with a launcher</strong> — we’re not a AAA studio).</p>
+<p>This is how we can quickly get the built code to everyone who needs it to test. Here’s a screenshot:</p>
+<p><img src="/img/2024-03-12/launcher.png" alt="a MacOS application, which is currently downloading a build of the game. The application is titled “Funkin’ Launcher” and has a 16:10 aspect ratio. The upper 85% are taken up by a drawing of Boyfriend and Girlfriend in a test chamber. At the bottom there are three interactive elements that are greyed out currently: The left one is a selection for the game platform (showing “html5”). The middle one is a selection for the game version (showing “html5-rewrite/master” followed by the current date). The right one is a button. The button text has been replaced by the download progress in percent, followed by the estimated remaining download time. Below the three interactive elements is a progress bar for the download." /></p>
+<aside>
+  <i class="i-mdi-alert-decagram amber"></i>
+  <strong  class="amber" >Nerd stuff: When to make sacrifices</strong>
+  <p>
+    <p>The launcher was built in Electron. If you’re someone who pokes into the apps you use on a daily basis, you might’ve had a bit of an allergic reaction hearing that name, given the fact Electron isn’t very efficient with storage space nor memory usage.<br />
+I knowingly chose it despite that to make an important tradeoff: getting the launcher working and in the hands of testers in a very short time.</p>
+
+  </p>
+</aside><h3 id="h3-funkin-2160p-bluray-remux-hevc-dts-hd-ma-truehd-7-1-atmos-fgt" class="relative">
+    <div class="absolute heading-anchor" id="funkin-2160p-bluray-remux-hevc-dts-hd-ma-truehd-7-1-atmos-fgt"></div>
+    Funkin.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT
+  </h3>
+  
+<p>To make sure everyone gets access to all the files, tools, and services they need (and only the ones they need), I’ve also set up something called <em>single sign-on</em> (SSO) service.</p>
+<p>It avoids having a bunch of passwords and accounts to access different tools and data. Instead, you get a single account for everything Funkin’ (<a href="https://sso.tax/">except GitHub</a>).</p>
+<aside>
+  <i class="i-mdi-alert-decagram amber"></i>
+  <strong  class="amber" >Nerd stuff: Picking the right tool</strong>
+  <p>
+    <p>We use <a href="https://goauthentik.io/">authentik</a> for our SSO. I chose it for us because:</p>
+<ol>
+<li>It’s open-source &lt;3</li>
+<li>It’s free and reasonably straightforward to set up. There’s always a balancing act between time saved and tool cost, and luckily this one’s a pretty clear winner.</li>
+<li>It’s versatile, meaning we can more easily integrate with a bunch of third-party services that we don’t have control over.</li>
+<li>It’s battle-tested.</li>
+</ol>
+
+  </p>
+</aside><h4 id="h4-all-the-tools" class="relative">
+    <div class="absolute heading-anchor" id="all-the-tools"></div>
+    All the tools
+  </h4>
+  
+<p>One of the internal services we have is a download page for all of our tooling. It automatically figures out what tools you have access to from your SSO login, and then lists all of those for you.</p>
+<p><img src="/img/2024-03-12/tools.png" alt="A screenshot of Firefox on MacOS, navigated to tools.funkin.me/applications. The website is a very dark grey with white text. There is a list of applications, currently only showing “launcher”. The application name is followed by download links for different platforms (e.g. MacOS, Apple Silicon) and how long ago it was last updated." /></p>
+<h4 id="h4-all-the-data" class="relative">
+    <div class="absolute heading-anchor" id="all-the-data"></div>
+    All the data
+  </h4>
+  
+<p>Another, less pretty looking site we have is the log viewer. It allows developers to see the output of applications they put on our servers. For example, here’s the log output for when I solved an issue where one of our staff members couldn’t access game builds.</p>
+<p><img src="/img/2024-03-12/logs.png" alt="A screenshot of Firefox on MacOS, navigated to logs.funkin.me. The website is black with white monospace text. The text reads: 2023-08-13 22:15: Block logged in with groups: authentik Users 2023-08-13 22:15: FAIL: GET /uploads/ (Block with groups: authentik Users) 2023-08-13 22:29: Block logged in with groups: authentik Users, Staff 2023-08-13 22:29: GET /uploads/ (Block is staff)" /></p>
+<hr />
+<p>I’ve never actually played Factorio lol</p>
+<h2 id="h2-pins-progres" class="relative">
+    <div class="absolute heading-anchor" id="pins-progres"></div>
+    PINS PROGRES
+  </h2>
+  
+<p><em>by ninjamuffin99</em></p>
+<p>This week hot off the presses we have fresh news about pins, which is the packaging process for the pins has begun, and after that... should be shipments!</p>
+<div class="grid">
+<p><img src="/img/2024-03-12/pins.jpg" alt="img" /></p>
+<div>
+<p>
+2,000 individually packaged pins, out of 24,000! For some reason there's still 400 pins left for the manufacturer to send... In total we have in our hands 23,600 pins! Do remember, that if you are in a pin tier, you get all 4 pins for Boyfriend, Girlfriend, Pico and Tankman! Shipment estimates as of right now is starting with about 500 orders being shipped this week or so (our pin shipper is a bit sick this week!), and then likely ramping up more towards 1,000 orders being shipped per week. These are estimates from our pin shipper... so if they are off we will make sure to kill him...</p>
+<p><img src="/img/2024-03-12/pins2.jpg" alt="img" /></p>
+</div>
+</div>
+<h2 id="h2-outro-for-the-week" class="relative">
+    <div class="absolute heading-anchor" id="outro-for-the-week"></div>
+    outro for the week
+  </h2>
+  
+<p><em>by ninjamuffin99</em></p>
+<p>hazel made fun little factorio references in their blog... and that mf aint ever play it!! die! I do want to say that the factorio blog is one of the inspirations behind this blog and it's writings, I very much love reading factorio friday facts and love to dig through all of the old ones and see about what they're working on and what got implemented. As we get back into funkin bloggings, it is fun and nice to also look back at some of our old posts by now!</p>
+<p>SONG OF THE WEEK: <div >
+  <iframe style=" width: 100%; height: 480px;"
+    src="https://www.youtube-nocookie.com/embed/bwb8oA6JBDc"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div></p>
+
+
+  <script>
+    const toc = document.getElementsByClassName('sticky-toc')[0];
+    const close_toc = () => toc.open = false;
+
+    const h1 = document.getElementsByTagName('h1');
+  </script>
+
+</article>
+
+<div class="flex flex-row gap-2 my-4">
+
+  
+  <button type="button" width="100%" onclick="window.location.href='https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2024-03-03&#x2F;'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Previous Post <br> WEEK OF 2024&#x2F;03&#x2F;03 - another lil funkblog
+  </button>
+  
+
+  <button type="button" width="100%" onclick="window.location.href='https://funkin.me/blog/'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Return to blog
+  </button>
+
+  
+  <button type="button" width="100%" onclick="window.location.href='https:&#x2F;&#x2F;funkin.me&#x2F;blog&#x2F;2024-04-30&#x2F;'" class="px-4 py-3 bg-primary text-white rounded-lg grow basis-0">
+    Next Post <br> The Weekend 1 Content Update is now available!
+  </button>
+  
+
+</div>
+
+
+  </main>
+
+  <footer class="my-8">
+    <div class="flex flex-row justify-center gap-1">
+      <a href="https://www.youtube.com/@FNF_Developers">
+        <i class="i-mdi-youtube"></i>
+      </a>
+      <a href="https://x.com/fnf_developers">
+        <i class="i-mdi-twitter"></i>
+      </a>
+      <a href="https://github.com/FunkinCrew">
+        <i class="i-mdi-github"></i>
+      </a>
+    </div>
+    <!--div align='center'>
+      <a href='https://www.free-website-hit-counter.com'>
+        <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=145132&s=36' border='0'
+          alt='Free Website Hit Counter'>
+      </a>
+      <br />
+      <small>
+        <a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">
+          Free website hit counter
+        </a>
+      </small>
+  </div-->
+  </footer>
+
+</body>
+
+</html>
