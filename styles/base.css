@@ -7,7 +7,7 @@ a, button {
 .prose {
     hgroup {
         p {
-            @apply m-1;
+            @apply mt-1 mb-1;
         }
 
         h1, h2, h3, h4, h5, h6 {
