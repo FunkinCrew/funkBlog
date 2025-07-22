@@ -38,10 +38,8 @@ a {
 .prose {
     hgroup {
         p {
-            @apply absolute text-gray-300 m-0 bottom-0 left-0 translate-y-7;
+            @apply text-gray-300;
         }
-
-        @apply relative mb-12;
     }
 
     --tw-prose-links: theme("colors.primary.400");
