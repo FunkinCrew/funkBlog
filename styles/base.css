@@ -7,14 +7,12 @@ a, button {
 .prose {
     hgroup {
         p {
-            @apply absolute m-0 bottom-0 left-0 translate-y-7;
+            @apply mt-1 mb-1;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            @apply mt-0;
+            @apply m-0;
         }
-
-        @apply relative mb-12;
     }
 
     section {
